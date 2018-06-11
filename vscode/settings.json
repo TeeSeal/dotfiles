@@ -1,0 +1,70 @@
+{
+  // ---- EDITOR ----
+  "editor.fontFamily": "SF Mono, Fira Code",
+  "editor.fontLigatures": true,
+  "editor.minimap.enabled": false,
+  "editor.scrollBeyondLastLine": false,
+  "editor.renderWhitespace": "all",
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.tabSize": 2,
+  "editor.rulers": [
+    80
+  ],
+  "workbench.colorTheme": "Ayu Mirage",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.startupEditor": "none",
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.tabCloseButton": "left",
+  "workbench.colorCustomizations": {
+    // "editorBracketMatch.background": "#7fffd573",
+    // "editorBracketMatch.border": "#00ffffbd"
+  },
+  "files.trimTrailingWhitespace": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  // ---- MIXED ----
+  "terminal.integrated.fontFamily": "Fira Code",
+  "extensions.autoUpdate": false,
+  "explorer.openEditors.visible": 0,
+  "explorer.autoReveal": false,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "eslint.packageManager": "yarn",
+
+  // ---- GITLENS ----
+  "gitlens.historyExplorer.enabled": true,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.keymap": "chorded",
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true
+  },
+
+  // ---- ICONS ----
+  "vsicons.associations.files": [
+    { "icon": "eex", "extensions": ["html.eex"], "format": "svg" },
+    { "icon": "elixir", "extensions": ["mix.lock"], "filename": true, "format": "svg" }
+  ],
+
+  // ---- FORMATTING ----
+  "prettier.arrowParens": "avoid",
+  "prettier.eslintIntegration": true,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "ruby.lint": { "rubocop": true },
+  "ruby.format": "rubocop",
+  "ruby.intellisense": "rubyLocate",
+  "ruby.codeCompletion": "rcodetools",
+
+  // ---- ELIXIR ----
+  "[elixir]": {
+    "editor.quickSuggestions": true
+  }
+}
