@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+echo ''
+echo "🚀  INSTALLS"
+
+for source in $(find -H "$DOTFILES_ROOT" -name 'install' -not -path '*script*'); do
+  echo "> Running $source"
+  eval "$source"
+done

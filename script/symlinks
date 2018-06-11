@@ -1,0 +1,21 @@
+#!/usr/bin/env sh
+
+echo ''
+echo "🔗  SYMLINKS"
+
+for src in $(find -H "$DOTFILES_ROOT" -name '*.symlink'); do
+  dest="$HOME/.$(basename "${source%.*}")"
+
+  if [ -e "$dest" ]; then
+    if [ "$src" -ef "$dest" ]; then
+      echo "✅  $src already linked"
+      return 0
+    else
+      mv "$dest" "$dest.bak"
+      echo "⚠️  moved $dest to $dest.bak"
+    fi
+  fi
+
+  ln -sf "$src" "$dest"
+  echo "✅  linked $src to $dest"
+done
