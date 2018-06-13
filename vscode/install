@@ -1,9 +1,6 @@
 #!/usr/bin/env sh
 
-if ! which code >/dev/null 2>&1; then
-  echo "VSCode not found."
-  exit 1
-fi
+which code >/dev/null 2>&1 || brew cask install visual-studio-code
 
 VSCODE_USER="$HOME/Library/Application Support/Code/User"
 
