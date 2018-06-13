@@ -4,6 +4,7 @@ echo ''
 echo "🚀  INSTALLS"
 
 for source in $(find -H "$DOTFILES" -name 'install' -not -path '*script*'); do
+  echo
   echo "> Running $source"
   sh "$source"
 done
