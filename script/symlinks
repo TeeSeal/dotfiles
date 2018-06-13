@@ -3,19 +3,22 @@
 echo ''
 echo "🔗  SYMLINKS"
 
-for src in $(find -H "$DOTFILES_ROOT" -name '*.symlink'); do
-  dest="$HOME/.$(basename "${source%.*}")"
-
-  if [ -e "$dest" ]; then
-    if [ "$src" -ef "$dest" ]; then
-      echo "✅  $src already linked"
+link_file() {
+  if [ -e "$2" ]; then
+    if [ "$1" -ef "$2" ]; then
+      echo "✅  $1 already linked"
       return 0
     else
-      mv "$dest" "$dest.bak"
-      echo "⚠️  moved $dest to $dest.bak"
+      mv "$2" "$2.bak"
+      echo "⚠️  moved $2 to $2.bak"
     fi
   fi
 
-  ln -sf "$src" "$dest"
-  echo "✅  linked $src to $dest"
+  ln -sf "$1" "$2"
+  echo "✅  linked $1 to $2"
+}
+
+for src in $(find -H "$DOTFILES" -name '*.symlink'); do
+  dest="$HOME/.$(basename "${src%.*}")"
+  link_file "$src" "$dest"
 done

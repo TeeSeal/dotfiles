@@ -3,7 +3,7 @@
 echo ''
 echo "🚀  INSTALLS"
 
-for source in $(find -H "$DOTFILES_ROOT" -name 'install' -not -path '*script*'); do
+for source in $(find -H "$DOTFILES" -name 'install' -not -path '*script*'); do
   echo "> Running $source"
-  eval "$source"
+  sh "$source"
 done

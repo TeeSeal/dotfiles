@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 cd "$(dirname "$0")/.."
-export DOTFILES_ROOT=$(pwd)
+export DOTFILES=$(pwd)
 
 ./script/symlinks
 ./script/install

@@ -1,0 +1,11 @@
+JakeBecker.elixir-ls
+PeterJausovec.vscode-docker
+dbaeumer.vscode-eslint
+dbankier.vscode-quick-select
+eamodio.gitlens
+esbenp.prettier-vscode
+mikestead.dotenv
+rebornix.Ruby
+robertohuertasm.vscode-icons
+steve8708.Align
+teabyii.ayu
