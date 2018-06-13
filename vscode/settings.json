@@ -20,6 +20,7 @@
     // "editorBracketMatch.border": "#00ffffbd"
   },
   "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
   "diffEditor.ignoreTrimWhitespace": false,
 
   // ---- MIXED ----

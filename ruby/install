@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+if which rbenv >/dev/null 2>&1; then
+  brew upgrade rbenv
+else
+  brew install rbenv
+fi

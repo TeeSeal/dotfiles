@@ -1,0 +1,5 @@
+caarlos0/ports
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-completions
+# zdharma/fast-syntax-highlighting
+zsh-users/zsh-syntax-highlighting

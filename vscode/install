@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 if ! which code >/dev/null 2>&1; then
   echo "VSCode not found."
   exit 1
