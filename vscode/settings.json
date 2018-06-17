@@ -24,13 +24,14 @@
   "diffEditor.ignoreTrimWhitespace": false,
 
   // ---- MIXED ----
-  "terminal.integrated.fontFamily": "Fira Code",
+  "terminal.integrated.fontFamily": "SFMono Nerd Font",
   "extensions.autoUpdate": false,
   "explorer.openEditors.visible": 0,
   "explorer.autoReveal": false,
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
   "eslint.packageManager": "yarn",
+  "emmet.includeLanguages": { "erb": "html" },
 
   // ---- GITLENS ----
   "gitlens.historyExplorer.enabled": true,

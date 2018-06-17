@@ -1,0 +1,4 @@
+DEFAULT_USER="teeseal"
+EDITOR="vim"
+VISUAL="code"
+export LANG="en"

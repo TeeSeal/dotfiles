@@ -4,10 +4,6 @@ export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 POWERLEVEL9K_MODE="awesome-fontconfig"
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
-DEFAULT_USER="teeseal"
-EDITOR="vim"
-VEDITOR="code"
-
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
@@ -23,4 +19,3 @@ POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='black'
 POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='yellow'
 POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='black'
 POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='red'
-FAST_HIGHLIGHT=()
