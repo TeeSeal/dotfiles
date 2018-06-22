@@ -1,11 +1,12 @@
 export DOTFILES="$HOME/.dotfiles"
 
-# Load plugins
-source ~/.zsh_plugins.sh
-
 files=($DOTFILES/*/*.zsh)
 for file in $files; do
   source "$file"
 done
 
+# Load and configure plugins
+[ -f "$DOTFILES/antibody/load" ] && source  "$DOTFILES/antibody/load"
+
+# Source localrc
 [ -f "$HOME/.localrc" ] && source "$HOME/.localrc"
