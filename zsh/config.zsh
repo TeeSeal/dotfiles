@@ -1,14 +1,8 @@
-export ZSH="/Users/TeeSeal/.oh-my-zsh"
-export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
-
-POWERLEVEL9K_MODE="awesome-fontconfig"
-ZSH_THEME="powerlevel9k/powerlevel9k"
-
-plugins=(git)
-
-source $ZSH/oh-my-zsh.sh
+CLICOLOR=1
+LSCOLORS="Gxfxcxdxbxegedabagacad"
 
 # Powerlevel9k config
+POWERLEVEL9K_MODE="awesome-fontconfig"
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
 POWERLEVEL9K_SHORTEN_DELIMITER=""
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)

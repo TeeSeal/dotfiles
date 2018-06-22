@@ -1,4 +1,0 @@
-# Load plugins
-source ~/.zsh_plugins.sh
-
-FAST_HIGHLIGHT=()

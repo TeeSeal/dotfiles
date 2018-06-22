@@ -1,12 +1,30 @@
 export DOTFILES="$HOME/.dotfiles"
+export ZPLUG_HOME=/usr/local/opt/zplug
+source $ZPLUG_HOME/init.zsh
 
-files=($DOTFILES/*/*.zsh)
-for file in $files; do
-  source "$file"
-done
+# Configs
+zplug "$DOTFILES", from:local, use:"*/*.zsh"
 
-# Load and configure plugins
-[ -f "$DOTFILES/antibody/load" ] && source  "$DOTFILES/antibody/load"
+# Theme
+zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme, on:"$DOTFILES"
+
+# Plugins
+zplug "plugins/git", from:oh-my-zsh, if:"which git"
+zplug "zsh-users/zsh-autosuggestions"
+zplug "zdharma/fast-syntax-highlighting", \
+  defer:2, \
+  hook-load:"FAST_HIGHLIGHT=()"
+
+# Install missing plugins if needed
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
+# Load plugins
+zplug load
 
 # Source localrc
 [ -f "$HOME/.localrc" ] && source "$HOME/.localrc"
