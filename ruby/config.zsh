@@ -1,2 +1,3 @@
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+RBENV_HOME="$HOME/.rbenv"
+[[ :$PATH: == *":$RBENV_HOME/bin:"* ]] || PATH+=":$RBENV_HOME/bin"
+[[ :$PATH: == *":$RBENV_HOME/shims:"* ]] || eval "$(rbenv init -)"
