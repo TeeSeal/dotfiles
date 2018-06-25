@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env zsh
 
 cd "$(dirname "$0")/.."
 export DOTFILES=$(pwd)
