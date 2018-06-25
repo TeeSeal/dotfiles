@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+if which rustup >/dev/null 2>&1; then
+  echo "Rust already installed"
+else
+  curl https://sh.rustup.rs -sSf | sh
+fi

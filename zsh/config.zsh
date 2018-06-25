@@ -1,10 +1,15 @@
 # Colors
-CLICOLOR=1
-LSCOLORS="Gxfxcxdxbxegedabagacad"
+export CLICOLOR=1
+export LSCOLORS="Gxfxcxdxbxegedabagacad"
+zstyle ':completion:*' menu select
 
 # History
-SAVEHIST=1000
 HISTFILE="$HOME/.zsh_history"
+HISTSIZE=10000000
+SAVEHIST=10000000
+setopt HIST_IGNORE_DUPS
+setopt HIST_FIND_NO_DUPS
+setopt INC_APPEND_HISTORY
 
 # Powerlevel9k config
 POWERLEVEL9K_MODE="awesome-fontconfig"
