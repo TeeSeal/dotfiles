@@ -1,5 +1,8 @@
 #!/usr/bin/env sh
 
+printf "Install Rust? [y/n]: "
+read -q || exit 0
+
 if which rustup >/dev/null 2>&1; then
   echo "Rust already installed"
 else
