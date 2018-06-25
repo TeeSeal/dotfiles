@@ -1,0 +1,4 @@
+#!/usr/bin/env zsh
+
+[ -n $(brew list | grep zplug) ] && exit 0
+brew install zplug

@@ -7,3 +7,5 @@ export DOTFILES=$(pwd)
 ./script/zsh
 ./script/symlinks
 ./script/install
+
+echo; echo "✨  Done"
