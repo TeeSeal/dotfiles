@@ -1,8 +1,9 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 
 cd "$(dirname "$0")/.."
 export DOTFILES=$(pwd)
 
 ./script/brew
+./script/zsh
 ./script/symlinks
 ./script/install

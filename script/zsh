@@ -1,0 +1,7 @@
+#!/usr/bin/env zsh
+
+which zsh >/dev/null 2>&1 && exit 0
+
+echo "💻  Installing zsh..."
+brew install zsh
+chsh -s $(which zsh)

@@ -1,0 +1,8 @@
+#!/usr/bin/env zsh
+
+[ -n $(brew cask list | grep iterm2) ] && exit 0
+
+printf "Install iTerm2? [y/n]: "
+read -q || exit 0
+
+brew cask install iterm2

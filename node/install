@@ -1,0 +1,8 @@
+#!/usr/bin/env zsh
+
+which n >/dev/null 2>&1 && exit 0
+
+printf "Install n? [y/n]: "
+read -q || exit 0
+
+curl -L https://git.io/n-install | N_PREFIX=~/.n zsh

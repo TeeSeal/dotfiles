@@ -1,10 +1,8 @@
 #!/usr/bin/env zsh
 
-printf "Install Ruby? [y/n]: "
+which rbenv >/dev/null 2>&1 && exit 0
+
+printf "Install rbenv? [y/n]: "
 read -q || exit 0
 
-if which rbenv >/dev/null 2>&1; then
-  brew upgrade rbenv
-else
-  brew install rbenv
-fi
+brew install rbenv
