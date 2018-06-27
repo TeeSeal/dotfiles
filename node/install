@@ -1,8 +1,11 @@
 #!/usr/bin/env zsh
 
-which n >/dev/null 2>&1 && exit 0
+if ! which n >/dev/null 2>&1; then
+  printf "Install n? [y/n]: "
+  read -q && curl -L https://git.io/n-install | N_PREFIX="$HOME/.n" bash
+fi
 
-printf "Install n? [y/n]: "
+which yarn >/dev/null 2>&1 && exit 0
+printf "Install yarn? [y/n]: "
 read -q || exit 0
-
-curl -L https://git.io/n-install | N_PREFIX="$HOME/.n" bash
+brew install yarn
