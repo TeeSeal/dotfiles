@@ -1,7 +1,9 @@
 # Colors
 export CLICOLOR=1
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
+
 zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
 # History
 HISTFILE="$HOME/.zsh_history"
