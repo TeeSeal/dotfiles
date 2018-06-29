@@ -586,11 +586,11 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>1011 253 445 103 0 0 1680 1028 </string>
+	<string>983 566 445 77 0 0 1680 1028 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 477 620 392 0 0 1680 1028 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>181 523 796 486 0 0 1680 1028 </string>
+	<string>247 555 916 394 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 1680 424 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -2073,7 +2073,7 @@
 			<key>Name</key>
 			<string>Tee Attached</string>
 			<key>Non Ascii Font</key>
-			<string>Monaco 12</string>
+			<string>FiraCode-Regular 12</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>

@@ -5,14 +5,12 @@ source $ZPLUG_HOME/init.zsh
 # Configs
 zplug "$DOTFILES", from:local, use:"*/*.zsh"
 
-# Theme
-zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme, on:"$DOTFILES"
 
-# Plugins
+zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme, as:theme
 zplug "plugins/git", from:oh-my-zsh, if:"which git"
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zdharma/fast-syntax-highlighting", \
-  defer:2, \
+  defer:1, \
   hook-load:"FAST_HIGHLIGHT=()"
 
 # Install missing plugins if needed
