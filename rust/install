@@ -3,7 +3,9 @@
 which rustup >/dev/null 2>&1 && exit 0
 
 printf "Install Rust? [y/n]: "
-read -q || exit 0
+if ! read -q; then
+  echo; exit 0
+fi
 echo
 
 curl https://sh.rustup.rs -sSf | sh

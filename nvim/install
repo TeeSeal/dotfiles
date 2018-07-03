@@ -1,8 +1,10 @@
 #!/usr/bin/env zsh
 
 printf "Install NVim? [y/n]: "
-read -q || exit 0
-echo hello
+if ! read -q; then
+  echo; exit 0
+fi
+echo
 
 which nvim >/dev/null 2>&1 || brew install nvim
 

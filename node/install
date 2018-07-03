@@ -2,10 +2,18 @@
 
 if ! which n >/dev/null 2>&1; then
   printf "Install n? [y/n]: "
-  read -q && curl -L https://git.io/n-install | N_PREFIX="$HOME/.n" bash
+  if read -q; then
+    echo; curl -L https://git.io/n-install | N_PREFIX="$HOME/.n" bash
+  else
+    echo
+  fi
 fi
 
 which yarn >/dev/null 2>&1 && exit 0
 echo; printf "Install yarn? [y/n]: "
-read -q || exit 0
-echo; brew install yarn
+if ! read -q; then
+  echo; exit 0
+fi
+echo
+
+brew install yarn

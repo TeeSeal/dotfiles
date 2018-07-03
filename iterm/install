@@ -3,7 +3,10 @@
 [ -n $(brew cask list | grep iterm2) ] && exit 0
 
 printf "Install iTerm2? [y/n]: "
-read -q || exit 0
+if ! read -q; then
+  echo; exit 0
+fi
 echo
+
 
 brew cask install iterm2

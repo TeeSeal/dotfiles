@@ -1,7 +1,9 @@
 #!/usr/bin/env zsh
 
 printf "Install Visual Studio Code? [y/n]: "
-read -q || exit 0
+if ! read -q; then
+  echo; exit 0
+fi
 echo
 
 which code >/dev/null 2>&1 || brew cask install visual-studio-code
