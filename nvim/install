@@ -2,6 +2,9 @@
 
 printf "Install NVim? [y/n]: "
 read -q || exit 0
+echo hello
+
+which nvim >/dev/null 2>&1 || brew install nvim
 
 NVIM_PATH="$HOME/.config/nvim"
 AUTOLOAD_PATH="$NVIM_PATH/autoload"

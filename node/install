@@ -6,6 +6,6 @@ if ! which n >/dev/null 2>&1; then
 fi
 
 which yarn >/dev/null 2>&1 && exit 0
-printf "Install yarn? [y/n]: "
+echo; printf "Install yarn? [y/n]: "
 read -q || exit 0
-brew install yarn
+echo; brew install yarn

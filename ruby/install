@@ -4,5 +4,6 @@ which rbenv >/dev/null 2>&1 && exit 0
 
 printf "Install rbenv? [y/n]: "
 read -q || exit 0
+echo
 
 brew install rbenv
