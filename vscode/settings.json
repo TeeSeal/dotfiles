@@ -17,6 +17,7 @@
   "workbench.startupEditor": "none",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.tabCloseButton": "left",
+  "workbench.statusBar.feedback.visible": false,
   "workbench.colorCustomizations": {
     // "editorBracketMatch.background": "#7fffd573",
     // "editorBracketMatch.border": "#00ffffbd"
