@@ -1,11 +1,12 @@
-JakeBecker.elixir-ls
-PeterJausovec.vscode-docker
 dbaeumer.vscode-eslint
 dbankier.vscode-quick-select
 eamodio.gitlens
-esbenp.prettier-vscode
+JakeBecker.elixir-ls
 mikestead.dotenv
+ms-vscode.Go
+PeterJausovec.vscode-docker
 rebornix.Ruby
 robertohuertasm.vscode-icons
+rust-lang.rust
 steve8708.Align
 teabyii.ayu

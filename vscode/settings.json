@@ -59,7 +59,6 @@
   ],
 
   // ---- FORMATTING ----
-  "tslint.autoFixOnSave": true,
   "eslint.autoFixOnSave": true,
   "ruby.lint": { "rubocop": false },
   "ruby.format": "rubocop",
