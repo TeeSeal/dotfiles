@@ -1,0 +1,12 @@
+#!/usr/bin/env zsh
+
+which elixir >/dev/null 2>&1 && exit 0
+
+printf "Install Elixir? [y/n]: "
+if ! read -q; then
+  echo; exit 0
+fi
+echo
+
+brew install elixir
+mix local.hex
