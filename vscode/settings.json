@@ -34,13 +34,16 @@
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
   "eslint.packageManager": "yarn",
-  "emmet.includeLanguages": { "erb": "html" },
+  "emmet.includeLanguages": {
+    "erb": "html"
+  },
 
   // ---- GITLENS ----
-  "gitlens.historyExplorer.enabled": true,
-  "gitlens.codeLens.enabled": false,
-  "gitlens.codeLens.recentChange.enabled": false,
   "gitlens.keymap": "chorded",
+  "gitlens.defaultDateFormat": "YYYY-MM-DD \\a\\t hh:mm",
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.statusBar.enabled": false,
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
     "suppressCommitNotFoundWarning": false,
