@@ -1,0 +1,17 @@
+# This is Git's per-user configuration file.
+[user]
+  name = TeeSeal
+  email = teesealz@gmail.com
+[http]
+  postBuffer = 524288000
+[core]
+  excludesfile = ~/.gitignore
+  editor = nvim
+[diff]
+  tool = vimdiff
+[difftool]
+  prompt = false
+[alias]
+  d = difftool
+[merge]
+  tool = code
