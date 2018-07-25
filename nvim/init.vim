@@ -12,3 +12,5 @@ set lcs=eol:¬,space:·,tab:»\ ,trail:·
 " Theme setup
 let ayucolor="mirage"
 colorscheme ayu
+
+let g:ctrlp_dont_split = 'nerdtree'
