@@ -5,9 +5,15 @@ source $ZPLUG_HOME/init.zsh
 # Configs
 zplug "$DOTFILES", from:local, use:"*/*.zsh"
 
+# From Oh My Zsh
+zplug "plugins/common-aliases", from:oh-my-zsh
+zplug "plugins/docker",         from:oh-my-zsh
+zplug "plugins/jsontools",      from:oh-my-zsh
+zplug "plugins/vscode",         from:oh-my-zsh
+zplug "plugins/git",            from:oh-my-zsh, if:"which git"
+zplug "plugins/bundler",        from:oh-my-zsh, if:"which bundle"
 
 zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme, as:theme
-zplug "plugins/git", from:oh-my-zsh, if:"which git"
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zdharma/fast-syntax-highlighting", \
   defer:1, \
