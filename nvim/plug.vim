@@ -4,4 +4,8 @@ call plug#begin()
 	Plug 'tpope/vim-sleuth'
 	Plug 'kien/ctrlp.vim'
 	Plug 'scrooloose/nerdtree'
+	Plug 'Chiel92/vim-autoformat'
+	Plug 'ryanoasis/vim-devicons'
+	Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+	Plug 'airblade/vim-gitgutter'
 call plug#end()

@@ -7,3 +7,8 @@ vnoremap ˚ :m '<-2<CR>gv=gv
 
 " Nerd Tree
 map <C-n> :NERDTreeToggle<CR>
+
+map <F3> :Autoformat<CR>
+map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
+			\ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
+			\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
