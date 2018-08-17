@@ -1,5 +1,5 @@
 DEFAULT_USER="teeseal"
 EDITOR="vim"
 VISUAL="code"
-export LANG="en"
+export LANG="en_GB.UTF-8"
 export LC_ALL="en_US.UTF-8"

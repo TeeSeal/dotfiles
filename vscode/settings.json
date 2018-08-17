@@ -12,7 +12,6 @@
   "editor.rulers": [
     80
   ],
-  "workbench.colorTheme": "Ayu Mirage",
   "workbench.iconTheme": "vscode-icons",
   "workbench.startupEditor": "none",
   "workbench.editor.enablePreviewFromQuickOpen": false,
@@ -24,6 +23,7 @@
   },
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
+  "files.autoSave": "onFocusChange",
   "diffEditor.ignoreTrimWhitespace": false,
 
   // ---- MIXED ----
@@ -67,6 +67,7 @@
   "ruby.format": "rubocop",
   "ruby.intellisense": "rubyLocate",
   "ruby.codeCompletion": "rcodetools",
+  "ruby.useLanguageServer": true,
 
   // ---- ELIXIR ----
   "[elixir]": {
