@@ -3,7 +3,7 @@
 if ! which n >/dev/null 2>&1; then
   printf "Install n? [y/n]: "
   if read -q; then
-    echo; curl -L https://git.io/n-install | N_PREFIX="$HOME/.n" bash
+    echo; brew install node
   else
     echo
   fi

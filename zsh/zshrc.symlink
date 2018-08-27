@@ -8,9 +8,6 @@ zplug "$DOTFILES", from:local, use:"*/*.zsh"
 # From Oh My Zsh
 zplug "lib/termsupport",        from:oh-my-zsh
 zplug "plugins/common-aliases", from:oh-my-zsh
-zplug "plugins/docker",         from:oh-my-zsh
-zplug "plugins/jsontools",      from:oh-my-zsh
-zplug "plugins/vscode",         from:oh-my-zsh
 zplug "plugins/git",            from:oh-my-zsh, if:"which git"
 zplug "plugins/bundler",        from:oh-my-zsh, if:"which bundler || which rbenv"
 
