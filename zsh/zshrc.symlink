@@ -26,5 +26,8 @@ fi
 # Load plugins
 zplug load
 
+# Source fzf if present
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # Source localrc
 [ -f "$HOME/.localrc" ] && source "$HOME/.localrc"

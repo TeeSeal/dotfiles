@@ -27,11 +27,15 @@
   "files.autoSave": "onFocusChange",
   "diffEditor.ignoreTrimWhitespace": false,
 
+  // ---- EXPLORER / WINDOW ----
+  "explorer.openEditors.visible": 0,
+  "explorer.autoReveal": false,
+  "explorer.confirmDelete": false,
+  "window.zoomLevel": 0,
+
   // ---- MIXED ----
   "terminal.integrated.fontFamily": "SFMono Nerd Font",
   "extensions.autoUpdate": false,
-  "explorer.openEditors.visible": 0,
-  "explorer.autoReveal": false,
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
   "eslint.packageManager": "yarn",
