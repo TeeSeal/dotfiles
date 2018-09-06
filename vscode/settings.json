@@ -77,5 +77,11 @@
   // ---- ELIXIR ----
   "[elixir]": {
     "editor.quickSuggestions": true
+  },
+
+  // ---- PYTHON ----
+  "python.pythonPath": "/usr/local/bin/python3",
+  "[python]": {
+    "editor.tabSize": 4
   }
 }

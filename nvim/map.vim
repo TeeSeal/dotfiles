@@ -5,8 +5,8 @@ inoremap ˚ <Esc>:m .-2<CR>==gi
 vnoremap ∆ :m '>+1<CR>gv=gv
 vnoremap ˚ :m '<-2<CR>gv=gv
 
-" Nerd Tree
 map <C-n> :NERDTreeToggle<CR>
+map <C-p> :Files<CR>
 
 map <F3> :Autoformat<CR>
 map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'

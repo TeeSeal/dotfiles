@@ -1,0 +1,11 @@
+#!/usr/bin/env zsh
+
+which python3 >/dev/null 2>&1 && exit 0
+
+printf "Install Python3? [y/n]: "
+if ! read -q; then
+  echo; exit 0
+fi
+echo
+
+brew install python
