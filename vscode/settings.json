@@ -24,13 +24,13 @@
   },
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
-  "files.autoSave": "onFocusChange",
   "diffEditor.ignoreTrimWhitespace": false,
 
   // ---- EXPLORER / WINDOW ----
   "explorer.openEditors.visible": 0,
   "explorer.autoReveal": false,
   "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
   "window.zoomLevel": 0,
 
   // ---- MIXED ----
