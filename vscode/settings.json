@@ -43,7 +43,7 @@
     "erb": "html"
   },
 
-  // ---- GITLENS ----
+  // ---- GIT ----
   "gitlens.keymap": "chorded",
   "gitlens.defaultDateFormat": "YYYY-MM-DD \\a\\t hh:mm",
   "gitlens.codeLens.recentChange.enabled": false,
@@ -59,6 +59,13 @@
     "suppressResultsExplorerNotice": false,
     "suppressShowKeyBindingsNotice": true
   },
+  "github.hosts": [
+    {
+      "host": "https://github.com",
+      "username": "oauth",
+      "token": "system"
+    }
+  ],
 
   // ---- ICONS ----
   "vsicons.associations.files": [
@@ -81,6 +88,10 @@
 
   // ---- PYTHON ----
   "python.pythonPath": "/usr/local/bin/python3",
+  "python.linting.pylintArgs": [
+    "--load-plugins=pylint_django",
+    "--errors-only"
+  ],
   "[python]": {
     "editor.tabSize": 4
   }

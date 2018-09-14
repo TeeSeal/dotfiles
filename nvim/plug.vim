@@ -9,4 +9,5 @@ call plug#begin()
 	Plug 'airblade/vim-gitgutter'
 	Plug '/usr/local/opt/fzf'
 	Plug 'junegunn/fzf.vim'
+	Plug 'tpope/vim-bundler'
 call plug#end()
