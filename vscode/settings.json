@@ -29,7 +29,6 @@
   // ---- EXPLORER / WINDOW ----
   "explorer.openEditors.visible": 0,
   "explorer.autoReveal": false,
-  "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "window.zoomLevel": 0,
 
@@ -59,13 +58,6 @@
     "suppressResultsExplorerNotice": false,
     "suppressShowKeyBindingsNotice": true
   },
-  "github.hosts": [
-    {
-      "host": "https://github.com",
-      "username": "oauth",
-      "token": "system"
-    }
-  ],
 
   // ---- ICONS ----
   "vsicons.associations.files": [
