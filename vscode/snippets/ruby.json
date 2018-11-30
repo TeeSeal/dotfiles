@@ -16,31 +16,5 @@
   "Pry": {
     "prefix": "pry",
     "body": "binding.pry"
-  },
-
-  "Nokogiri::HTML.fragment()": {
-    "prefix": "nokofrag",
-    "body": "Nokogiri::HTML.fragment(${1:browser.html})"
-  },
-
-  "Nokogiri::HTML()": {
-    "prefix": "nokohtml",
-    "body": "Nokogiri::HTML(${1:browser.html})"
-  },
-
-  // SaltEdge specific
-  "Fixture.call()": {
-    "prefix": "fixture",
-    "body": "Fixture.call(:${1:accounts})"
-  },
-
-  "sort_elements_in_order": {
-    "prefix": "seio",
-    "body": "sort_elements_in_order(${1:rows}${2:, &method(:${3:pending?})})"
-  },
-
-  "single_record()": {
-    "prefix": "sgrc",
-    "body": "single_record(${1:browser}, \"$2\"${3:, \"screenshot\" => true})"
   }
 }

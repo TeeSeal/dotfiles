@@ -7,24 +7,27 @@
   "editor.renderWhitespace": "all",
   "editor.acceptSuggestionOnEnter": "off",
   "editor.tabSize": 2,
-  "editor.wordWrap": "on",
-  "editor.wrappingIndent": "indent",
-  "editor.rulers": [
-    100
-  ],
+  "editor.tabCompletion": "on",
+  "editor.suggest.localityBonus": true,
+  "editor.rulers": [100],
+
+  // ---- WORKBENCH ----
   "workbench.iconTheme": "vscode-icons",
   "workbench.colorTheme": "Ayu Mirage (Legacy)",
   "workbench.startupEditor": "none",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.tabCloseButton": "left",
   "workbench.statusBar.feedback.visible": false,
+  "workbench.editor.restoreViewState": false,
   "workbench.colorCustomizations": {
     // "editorBracketMatch.background": "#7fffd573",
     // "editorBracketMatch.border": "#00ffffbd"
   },
+
+  // ---- FILES ----
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
-  "diffEditor.ignoreTrimWhitespace": false,
+  "files.enableTrash": false,
 
   // ---- EXPLORER / WINDOW ----
   "explorer.openEditors.visible": 0,
@@ -34,6 +37,7 @@
 
   // ---- MIXED ----
   "terminal.integrated.fontFamily": "SFMono Nerd Font",
+  "diffEditor.ignoreTrimWhitespace": false,
   "extensions.autoUpdate": false,
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
@@ -73,6 +77,15 @@
   "ruby.codeCompletion": "rcodetools",
   "ruby.useLanguageServer": true,
 
+  // --- PROJECTS ---
+  "projectManager.groupList": true,
+  "projectManager.sortList": "Recent",
+  "projectManager.removeCurrentProjectFromList": true,
+  "projectManager.filterOnFullPath": true,
+  "projectManager.git.baseFolders": [
+    "/Users/teeseal/Code"
+  ],
+
   // ---- ELIXIR ----
   "[elixir]": {
     "editor.quickSuggestions": true
@@ -86,5 +99,11 @@
   ],
   "[python]": {
     "editor.tabSize": 4
+  },
+
+  // --- ASM ---
+  "[asm]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false
   }
 }
