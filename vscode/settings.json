@@ -105,5 +105,6 @@
   "[asm]": {
     "editor.tabSize": 4,
     "editor.insertSpaces": false
-  }
+  },
+  "gitlens.views.repositories.location": "scm"
 }
