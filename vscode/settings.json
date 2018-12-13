@@ -12,8 +12,8 @@
   "editor.rulers": [100],
 
   // ---- WORKBENCH ----
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.colorTheme": "Ayu Mirage (Legacy)",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Ayu Mirage Bordered",
   "workbench.startupEditor": "none",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.tabCloseButton": "left",
@@ -106,5 +106,6 @@
     "editor.tabSize": 4,
     "editor.insertSpaces": false
   },
-  "gitlens.views.repositories.location": "scm"
+  "gitlens.views.repositories.location": "scm",
+  "terminal.integrated.rendererType": "dom"
 }

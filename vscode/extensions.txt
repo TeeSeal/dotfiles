@@ -1,11 +1,9 @@
-dbaeumer.vscode-eslint
+alefragnani.Bookmarks
+alefragnani.project-manager
+CoenraadS.bracket-pair-colorizer
 dbankier.vscode-quick-select
 eamodio.gitlens
-JakeBecker.elixir-ls
-mikestead.dotenv
-ms-python.python
 PeterJausovec.vscode-docker
-rebornix.ruby
-robertohuertasm.vscode-icons
+PKief.material-icon-theme
 steve8708.Align
-TeeSeal.ayu-legacy
+teabyii.ayu

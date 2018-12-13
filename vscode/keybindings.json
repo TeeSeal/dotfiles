@@ -37,5 +37,9 @@
   {
     "key": "shift+cmd+b",
     "command": "-workbench.action.tasks.build"
+  },
+  {
+    "key": "shift+alt+cmd+b",
+    "command": "workbench.action.tasks.test"
   }
 ]
