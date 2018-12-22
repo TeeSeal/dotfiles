@@ -13,7 +13,6 @@
 
   // ---- WORKBENCH ----
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Ayu Mirage Bordered",
   "workbench.startupEditor": "none",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.tabCloseButton": "left",
@@ -107,5 +106,6 @@
     "editor.insertSpaces": false
   },
   "gitlens.views.repositories.location": "scm",
-  "terminal.integrated.rendererType": "dom"
+  "terminal.integrated.rendererType": "dom",
+  "workbench.colorTheme": "Ayu Mirage Bordered"
 }
