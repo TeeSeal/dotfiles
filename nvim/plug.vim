@@ -1,5 +1,5 @@
 call plug#begin()
-	Plug 'teeseal/ayu-vim'
+	Plug 'dracula/vim', { 'as': 'dracula' }
 	Plug 'sheerun/vim-polyglot'
 	Plug 'tpope/vim-sleuth'
 	Plug 'scrooloose/nerdtree'

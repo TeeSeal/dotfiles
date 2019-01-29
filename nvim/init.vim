@@ -13,8 +13,7 @@ set updatetime=50
 set clipboard=unnamed
 
 " Theme setup
-let ayucolor="mirage"
-colorscheme ayu
+colorscheme dracula
 
 let g:ctrlp_dont_split = 'nerdtree'
 let g:python3_host_prog = '/usr/local/bin/python3'
