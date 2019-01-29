@@ -9,10 +9,11 @@
   "editor.tabSize": 2,
   "editor.tabCompletion": "on",
   "editor.suggest.localityBonus": true,
-  "editor.rulers": [100],
-
-  // ---- WORKBENCH ----
+  "editor.rulers": [
+    100
+  ],
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Dracula",
   "workbench.startupEditor": "none",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.tabCloseButton": "left",
@@ -51,6 +52,7 @@
   "gitlens.codeLens.recentChange.enabled": false,
   "gitlens.codeLens.enabled": false,
   "gitlens.statusBar.enabled": false,
+  "gitlens.views.repositories.location": "scm",
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
     "suppressCommitNotFoundWarning": false,
@@ -61,12 +63,6 @@
     "suppressResultsExplorerNotice": false,
     "suppressShowKeyBindingsNotice": true
   },
-
-  // ---- ICONS ----
-  "vsicons.associations.files": [
-    { "icon": "eex", "extensions": ["html.eex"], "format": "svg" },
-    { "icon": "elixir", "extensions": ["mix.lock"], "filename": true, "format": "svg" }
-  ],
 
   // ---- FORMATTING ----
   "eslint.autoFixOnSave": true,
@@ -100,12 +96,7 @@
     "editor.tabSize": 4
   },
 
-  // --- ASM ---
-  "[asm]": {
-    "editor.tabSize": 4,
-    "editor.insertSpaces": false
+  "[rust]": {
+    "editor.tabSize": 4
   },
-  "gitlens.views.repositories.location": "scm",
-  "terminal.integrated.rendererType": "dom",
-  "workbench.colorTheme": "Ayu Mirage Bordered"
 }
