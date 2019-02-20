@@ -30,3 +30,6 @@ zplug load
 
 # Source localrc
 [ -f "$HOME/.localrc" ] && source "$HOME/.localrc"
+
+# Make all PATH entires unique
+typeset -aU path
