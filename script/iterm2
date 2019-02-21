@@ -8,5 +8,4 @@ if ! read -q; then
 fi
 echo
 
-
 brew cask install iterm2

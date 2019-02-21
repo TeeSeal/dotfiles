@@ -3,7 +3,7 @@ export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
 # Configs
-zplug "$DOTFILES", from:local, use:"*/*.zsh"
+zplug "$DOTFILES", from:local, use:"configs/*"
 
 # From Oh My Zsh
 zplug "lib/termsupport",        from:oh-my-zsh

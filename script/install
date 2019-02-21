@@ -1,8 +1,0 @@
-#!/usr/bin/env zsh
-
-echo ''
-echo "🚀  INSTALLS"
-
-for source in $(find -H "$DOTFILES" -name 'install' -not -path '*script*'); do
-  zsh "$source"
-done

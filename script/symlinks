@@ -18,7 +18,6 @@ link_file() {
   echo "✅  linked $1 to $2"
 }
 
-for src in $(find -H "$DOTFILES" -name '*.symlink'); do
-  dest="$HOME/.$(basename "${src%.*}")"
-  link_file "$src" "$dest"
+for src in $(ls "$DOTFILES/symlinks"); do
+  link_file "$DOTFILES/symlinks/$src" "$HOME/.$src"
 done
