@@ -41,6 +41,7 @@
   "extensions.autoUpdate": false,
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
+  "git.autofetch": true,
   "eslint.packageManager": "yarn",
   "emmet.includeLanguages": {
     "erb": "html"
@@ -66,11 +67,6 @@
 
   // ---- FORMATTING ----
   "eslint.autoFixOnSave": true,
-  "ruby.lint": { "rubocop": false },
-  "ruby.format": "rubocop",
-  "ruby.intellisense": "rubyLocate",
-  "ruby.codeCompletion": "rcodetools",
-  "ruby.useLanguageServer": true,
 
   // --- PROJECTS ---
   "projectManager.groupList": true,
@@ -80,6 +76,9 @@
   "projectManager.git.baseFolders": [
     "/Users/teeseal/Code"
   ],
+
+  // ---- RUBY ----
+  "ruby.format": "rubocop",
 
   // ---- ELIXIR ----
   "[elixir]": {
@@ -98,5 +97,5 @@
 
   "[rust]": {
     "editor.tabSize": 4
-  },
+  }
 }
