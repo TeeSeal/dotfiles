@@ -6,9 +6,9 @@ source $ZPLUG_HOME/init.zsh
 zplug "$DOTFILES", from:local, use:"configs/*"
 
 # From Oh My Zsh
-zplug "lib/termsupport",        from:oh-my-zsh
-zplug "plugins/git",            from:oh-my-zsh, if:"which git"
-zplug "plugins/bundler",        from:oh-my-zsh, if:"which bundler || which rbenv"
+zplug "lib/termsupport", from:oh-my-zsh
+zplug "plugins/git",     from:oh-my-zsh, if:"which git"
+zplug "plugins/bundler", from:oh-my-zsh, if:"which bundler || which rbenv"
 
 zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme, as:theme
 zplug "zsh-users/zsh-autosuggestions"
