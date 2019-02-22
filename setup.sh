@@ -3,8 +3,6 @@
 cd "$(dirname "$0")"
 export DOTFILES=$(pwd)
 
-echo $DOTFILES
-# Install basic stuff first
 type brew >/dev/null 2>&1 || {
   echo "🍺  Installing Homebrew..."
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
