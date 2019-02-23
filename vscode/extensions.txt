@@ -2,8 +2,8 @@ alefragnani.Bookmarks
 alefragnani.project-manager
 CoenraadS.bracket-pair-colorizer
 dbankier.vscode-quick-select
+dracula-theme.theme-dracula
 eamodio.gitlens
 PeterJausovec.vscode-docker
 PKief.material-icon-theme
 steve8708.Align
-teabyii.ayu
