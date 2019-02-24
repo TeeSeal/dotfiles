@@ -35,7 +35,6 @@ setopt INC_APPEND_HISTORY
 zplug "$DOTFILES", from:local, use:"configs/*"
 
 # From Oh My Zsh
-zplug lib/termsupport, from:oh-my-zsh
 zplug plugins/git,     from:oh-my-zsh, if:"which git"
 zplug plugins/bundler, from:oh-my-zsh, if:"which bundler"
 
