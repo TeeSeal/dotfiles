@@ -25,14 +25,9 @@ brew list zplug >/dev/null 2>&1 2>&1 || {
   brew install zplug
 }
 
-type asdf >/dev/null 2>&1 || {
-  echo "🔠  Installing asdf..."
-  brew install asdf
-}
-
-./script/iterm2
-./script/nvim
-./script/vscode
-./script/symlinks
+source ./script/iterm2
+source ./script/nvim
+source ./script/vscode
+source ./script/symlinks
 
 echo; echo "✨  Done"
