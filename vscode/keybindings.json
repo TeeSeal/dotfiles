@@ -1,15 +1,5 @@
 [
   {
-    "key": "ctrl+cmd+/",
-    "command": "extension.align",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+cmd+a",
-    "command": "-extension.align",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "cmd+r",
     "command": "workbench.action.gotoSymbol"
   },
@@ -41,5 +31,9 @@
   {
     "key": "shift+alt+cmd+b",
     "command": "workbench.action.tasks.test"
+  },
+  {
+    "key": "ctrl+cmd+/",
+    "command": "wwm.aligncode"
   }
 ]

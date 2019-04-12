@@ -12,8 +12,8 @@
   "editor.rulers": [
     100
   ],
+  "workbench.colorTheme": "Nord",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Dracula",
   "workbench.startupEditor": "none",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.tabCloseButton": "left",
@@ -35,17 +35,9 @@
   "explorer.confirmDragAndDrop": false,
   "window.zoomLevel": 0,
 
-  // ---- MIXED ----
-  "terminal.integrated.fontFamily": "SFMono Nerd Font",
-  "diffEditor.ignoreTrimWhitespace": false,
-  "extensions.autoUpdate": false,
-  "git.enableSmartCommit": true,
-  "git.confirmSync": false,
-  "git.autofetch": true,
-  "eslint.packageManager": "yarn",
-  "emmet.includeLanguages": {
-    "erb": "html"
-  },
+  // ---- TERMINAL ----
+  "terminal.integrated.fontFamily": "SF Mono",
+  "terminal.integrated.shellArgs.osx": ["-l"],
 
   // ---- GIT ----
   "gitlens.keymap": "chorded",
@@ -81,14 +73,22 @@
       "autoFix": true
     },
   ],
+  "alignment.surroundSpace": {
+    "colon": [-1, 1],
+    "assignment": [1, 1],
+    "arrow": [1, 1],
+    "comment": 1
+  },
 
   // --- PROJECTS ---
+  "projectManager.showProjectNameInStatusBar": false,
   "projectManager.groupList": true,
   "projectManager.sortList": "Recent",
   "projectManager.removeCurrentProjectFromList": true,
   "projectManager.filterOnFullPath": true,
   "projectManager.git.baseFolders": [
-    "/Users/teeseal/Code"
+    "/Users/teeseal/Code",
+    "/Users/teeseal/.dotfiles"
   ],
 
   // ---- RUBY ----
@@ -111,5 +111,17 @@
 
   "[rust]": {
     "editor.tabSize": 4
+  },
+
+  // ---- MIXED ----
+  "diffEditor.ignoreTrimWhitespace": false,
+  "docker.groupImagesBy": "Repository",
+  "extensions.autoUpdate": false,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "eslint.packageManager": "yarn",
+  "emmet.includeLanguages": {
+    "erb": "html"
   }
 }

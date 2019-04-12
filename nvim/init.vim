@@ -17,7 +17,7 @@ set clipboard=unnamed
 
 " Theme setup
 let g:dracula_italic = 0
-colorscheme dracula
+colorscheme nord
 highlight Normal ctermbg=None
 
 let g:ctrlp_dont_split = 'nerdtree'
