@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 printf "Install NVim? [y/n]: "
-if ! read -q; then
+if ! yn; then
   echo; exit 0
 fi
 echo

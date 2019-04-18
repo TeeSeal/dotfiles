@@ -46,7 +46,7 @@ zplug zdharma/fast-syntax-highlighting
 # Install missing plugins if needed
 if ! zplug check --verbose; then
     printf "Install? [y/n]: "
-    if read -q; then
+    if yn; then
         echo; zplug install
     fi
 fi

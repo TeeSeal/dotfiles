@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 printf "Install Visual Studio Code? [y/n]: "
-if ! read -q; then
+if ! yn; then
   echo; exit 0
 fi
 echo
