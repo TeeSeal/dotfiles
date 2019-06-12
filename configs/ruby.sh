@@ -15,3 +15,4 @@ function ruby-install-tags() {
   which gem-ripper-tags >/dev/null 2>&1 || gem install gem-ripper-tags
 }
 
+BUNDLED_COMMANDS=(rescue)

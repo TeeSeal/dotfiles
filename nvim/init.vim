@@ -6,7 +6,7 @@ source $DOTFILES/nvim/map.vim
 
 " Terminal.app doesn't support true colors
 if $TERM_PROGRAM != 'Apple_Terminal'
-  set termguicolors
+"  set termguicolors
 endif
 set relativenumber
 set list

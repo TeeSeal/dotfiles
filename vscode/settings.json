@@ -93,6 +93,8 @@
 
   // ---- RUBY ----
   "ruby.format": "rubocop",
+  "ruby.intellisense": "rubyLocate",
+  "ruby.codeCompletion": "rcodetools",
 
   // ---- ELIXIR ----
   "[elixir]": {
@@ -123,5 +125,6 @@
   "eslint.packageManager": "yarn",
   "emmet.includeLanguages": {
     "erb": "html"
-  }
+  },
+  "breadcrumbs.enabled": false
 }
