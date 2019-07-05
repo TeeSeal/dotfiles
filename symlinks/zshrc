@@ -2,6 +2,9 @@ export DOTFILES="$HOME/.dotfiles"
 export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
+# GPG
+export GPG_TTY=$(tty)
+
 # Colors
 export CLICOLOR=1
 export LSCOLORS="Gxfxcxdxbxegedabagacad"

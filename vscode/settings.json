@@ -40,6 +40,10 @@
   "terminal.integrated.shellArgs.osx": ["-l"],
 
   // ---- GIT ----
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "git.enableCommitSigning": true,
   "gitlens.keymap": "chorded",
   "gitlens.defaultDateFormat": "YYYY-MM-DD \\a\\t hh:mm",
   "gitlens.codeLens.recentChange.enabled": false,
@@ -80,17 +84,6 @@
     "comment": 1
   },
 
-  // --- PROJECTS ---
-  "projectManager.showProjectNameInStatusBar": false,
-  "projectManager.groupList": true,
-  "projectManager.sortList": "Recent",
-  "projectManager.removeCurrentProjectFromList": true,
-  "projectManager.filterOnFullPath": true,
-  "projectManager.git.baseFolders": [
-    "/Users/teeseal/Code",
-    "/Users/teeseal/.dotfiles"
-  ],
-
   // ---- RUBY ----
   "ruby.format": "rubocop",
   "ruby.intellisense": "rubyLocate",
@@ -119,9 +112,6 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "docker.groupImagesBy": "Repository",
   "extensions.autoUpdate": false,
-  "git.enableSmartCommit": true,
-  "git.confirmSync": false,
-  "git.autofetch": true,
   "eslint.packageManager": "yarn",
   "emmet.includeLanguages": {
     "erb": "html"

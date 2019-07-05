@@ -35,5 +35,13 @@
   {
     "key": "ctrl+cmd+/",
     "command": "wwm.aligncode"
+  },
+  {
+    "key": "alt+cmd+o",
+    "command": "workbench.action.openRecent"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "-workbench.action.openRecent"
   }
 ]

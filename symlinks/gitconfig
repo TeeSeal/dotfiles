@@ -1,7 +1,8 @@
 # This is Git's per-user configuration file.
 [user]
-	name = TeeSeal
+	name = Alex Hincu
 	email = teesealz@gmail.com
+	signingKey = 1179468EE5D69764
 [http]
 	postBuffer = 524288000
 [core]
@@ -16,3 +17,5 @@
 	squash = "!f() { git reset --soft \"HEAD~$1\"; git commit -m \"$2\"; }; f"
 	undo = "!f() { git reset --soft \"HEAD~$1\"; }; f"
 	undof = "!f() { git reset --hard \"HEAD~$1\"; }; f"
+[commit]
+	gpgsign = true
