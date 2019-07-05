@@ -43,7 +43,6 @@
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
   "git.autofetch": true,
-  "git.enableCommitSigning": true,
   "gitlens.keymap": "chorded",
   "gitlens.defaultDateFormat": "YYYY-MM-DD \\a\\t hh:mm",
   "gitlens.codeLens.recentChange.enabled": false,
