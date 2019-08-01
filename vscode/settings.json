@@ -1,6 +1,6 @@
 {
   // ---- EDITOR ----
-  "editor.fontFamily": "SF Mono, Fira Code",
+  "editor.fontFamily": "Fira Code, SF Mono",
   "editor.fontLigatures": true,
   "editor.minimap.enabled": false,
   "editor.scrollBeyondLastLine": false,
@@ -12,12 +12,10 @@
   "editor.rulers": [
     100
   ],
-  "workbench.colorTheme": "Nord",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.tabCloseButton": "left",
-  "workbench.statusBar.feedback.visible": false,
   "workbench.editor.restoreViewState": false,
   "workbench.colorCustomizations": {
     // "editorBracketMatch.background": "#7fffd573",
@@ -109,11 +107,12 @@
 
   // ---- MIXED ----
   "diffEditor.ignoreTrimWhitespace": false,
-  "docker.groupImagesBy": "Repository",
+  "docker.images.groupBy": "Repository",
   "extensions.autoUpdate": false,
   "eslint.packageManager": "yarn",
   "emmet.includeLanguages": {
     "erb": "html"
   },
-  "breadcrumbs.enabled": false
+  "breadcrumbs.enabled": false,
+  "workbench.colorTheme": "Nord"
 }
