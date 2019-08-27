@@ -1,6 +1,6 @@
 {
   // ---- EDITOR ----
-  "editor.fontFamily": "Fira Code, SF Mono",
+  "editor.fontFamily": "SF Mono, Fira Code",
   "editor.fontLigatures": true,
   "editor.minimap.enabled": false,
   "editor.scrollBeyondLastLine": false,
