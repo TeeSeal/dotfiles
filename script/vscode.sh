@@ -1,8 +1,8 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 
 printf "Install Visual Studio Code? [y/n]: "
 if ! yn; then
-  echo; exit 0
+  echo; return
 fi
 echo
 
@@ -12,7 +12,7 @@ VSCODE_USER="$HOME/Library/Application Support/Code/User"
 
 ln -sf "$DOTFILES/vscode/settings.json" "$VSCODE_USER/settings.json"
 ln -sf "$DOTFILES/vscode/keybindings.json" "$VSCODE_USER/keybindings.json"
-ln -sf "$DOTFILES/vscode/snippets" "$VSCODE_USER/snippets"
+ln -sf "$DOTFILES/vscode/snippets" "$VSCODE_USER/" # snippets is a directory
 
 echo "✅  linked config files"
 echo "🚚  installing extensions"

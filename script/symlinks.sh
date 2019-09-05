@@ -1,6 +1,6 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 
-echo ''
+echo
 echo "🔗  SYMLINKS"
 
 link_file() {

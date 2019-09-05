@@ -1,10 +1,10 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 
-[ -n $(brew cask list | grep iterm2) ] || exit 0
+brew cask list iterm2 >/dev/null 2>&1 && return
 
 printf "Install iTerm2? [y/n]: "
 if ! yn; then
-  echo; exit 0
+  echo; return
 fi
 echo
 

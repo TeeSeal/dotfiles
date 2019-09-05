@@ -1,7 +1,6 @@
 #!/usr/bin/env sh
 
-cd "$(dirname "$0")"
-export DOTFILES=$(pwd)
+export DOTFILES=$(dirname "$0")
 
 yn() {
   while true; do
@@ -31,14 +30,14 @@ type git >/dev/null 2>&1 || {
 }
 
 # zplug acts weird with `type` so gotta check with brew
-brew list zplug >/dev/null 2>&1 2>&1 || {
+brew list zplug >/dev/null 2>&1 || {
   echo "📦  Installing zplug..."
   brew install zplug
 }
 
-source ./script/iterm2
-source ./script/nvim
-source ./script/vscode
-source ./script/symlinks
+source "$DOTFILES/script/iterm2.sh"
+source "$DOTFILES/script/nvim.sh"
+source "$DOTFILES/script/vscode.sh"
+source "$DOTFILES/script/symlinks.sh"
 
 echo; echo "✨  Done"
