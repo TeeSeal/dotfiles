@@ -33,12 +33,7 @@ zplug zsh-users/zsh-autosuggestions
 zplug zdharma/fast-syntax-highlighting
 
 # Install missing plugins if needed
-if ! zplug check --verbose; then
-    printf "Install? [y/n]: "
-    if yn; then
-        echo; zplug install
-    fi
-fi
+zplug check --verbose || zplug install
 
 # Load plugins
 zplug load
