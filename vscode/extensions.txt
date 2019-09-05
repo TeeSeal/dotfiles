@@ -1,5 +1,6 @@
 alefragnani.Bookmarks
 arcticicestudio.nord-visual-studio-code
+bungcip.better-toml
 CoenraadS.bracket-pair-colorizer
 dbaeumer.vscode-eslint
 dbankier.vscode-quick-select
