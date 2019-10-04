@@ -81,6 +81,17 @@
     "comment": 1
   },
 
+  // ---- Bracket Pair Colorizer ----
+  "bracket-pair-colorizer-2.colors": [
+    "#81A1C1",
+    "#B48EAD",
+    "#A3BE8C",
+    "#EBCB8B",
+    "#D08770",
+    "#BF616A",
+  ],
+  "bracket-pair-colorizer-2.unmatchedScopeColor": "#D8DEE9",
+
   // ---- RUBY ----
   "ruby.format": "rubocop",
   "ruby.intellisense": "rubyLocate",
@@ -114,5 +125,10 @@
     "erb": "html"
   },
   "breadcrumbs.enabled": false,
-  "workbench.colorTheme": "Nord"
+  "latex-workshop.message.update.show": false,
+  "latex-workshop.view.pdf.viewer": "tab",
+  "editor.wordWrap": "on",
+  "editor.wrappingIndent": "indent",
+  "workbench.colorTheme": "Nord",
+  "elixirLS.suggestSpecs": false
 }
