@@ -62,6 +62,10 @@
   "eslint.autoFixOnSave": true,
   "eslint.validate": [
     {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
       "language": "javascript",
       "autoFix": true
     },
@@ -73,6 +77,7 @@
       "language": "html",
       "autoFix": true
     },
+
   ],
   "alignment.surroundSpace": {
     "colon": [-1, 1],
