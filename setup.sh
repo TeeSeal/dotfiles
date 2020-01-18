@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-export DOTFILES=$(dirname "$0")
+export DOTFILES=$(cd "$(dirname "$0")"; pwd)
 
 yn() {
   while true; do

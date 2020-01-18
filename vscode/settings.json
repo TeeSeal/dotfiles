@@ -135,5 +135,9 @@
   "editor.wordWrap": "on",
   "editor.wrappingIndent": "indent",
   "workbench.colorTheme": "Nord",
-  "elixirLS.suggestSpecs": false
+  "elixirLS.suggestSpecs": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.fontWeight": "600"
 }
