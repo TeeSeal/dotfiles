@@ -31,6 +31,7 @@ zplug mafredri/zsh-async, use:async.zsh
 zplug sindresorhus/pure, use:pure.zsh, as:theme
 zplug zsh-users/zsh-autosuggestions
 zplug zdharma/fast-syntax-highlighting
+zplug iridakos/goto, use:goto.sh
 
 # Install missing plugins if needed
 zplug check --verbose || zplug install

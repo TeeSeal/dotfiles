@@ -4,7 +4,6 @@
   "editor.fontLigatures": true,
   "editor.minimap.enabled": false,
   "editor.scrollBeyondLastLine": false,
-  "editor.renderWhitespace": "all",
   "editor.acceptSuggestionOnEnter": "off",
   "editor.tabSize": 2,
   "editor.tabCompletion": "on",
@@ -21,6 +20,11 @@
     // "editorBracketMatch.background": "#7fffd573",
     // "editorBracketMatch.border": "#00ffffbd"
   },
+
+  // ---- FONTS ----
+  "debug.console.fontFamily": "SF Mono",
+  "editor.fontWeight": "500",
+  "terminal.integrated.fontWeight": "500",
 
   // ---- FILES ----
   "files.trimTrailingWhitespace": true,
@@ -58,26 +62,15 @@
     "suppressShowKeyBindingsNotice": true
   },
 
-  // ---- FORMATTING ----
-  "eslint.autoFixOnSave": true,
+  // ---- LINT ----
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
   "eslint.validate": [
-    {
-      "language": "typescript",
-      "autoFix": true
-    },
-    {
-      "language": "javascript",
-      "autoFix": true
-    },
-    {
-      "language": "vue",
-      "autoFix": true
-    },
-    {
-      "language": "html",
-      "autoFix": true
-    },
-
+    "typescript",
+    "javascript",
+    "vue",
+    "html"
   ],
   "alignment.surroundSpace": {
     "colon": [-1, 1],
@@ -134,10 +127,7 @@
   "latex-workshop.view.pdf.viewer": "tab",
   "editor.wordWrap": "on",
   "editor.wrappingIndent": "indent",
-  "workbench.colorTheme": "Nord",
   "elixirLS.suggestSpecs": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "editor.fontWeight": "600"
+  "editor.renderWhitespace": "all",
+  "workbench.colorTheme": "Monokai Pro (Filter Octagon)"
 }
