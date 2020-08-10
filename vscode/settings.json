@@ -94,6 +94,9 @@
   "ruby.format": "rubocop",
   "ruby.intellisense": "rubyLocate",
   "ruby.codeCompletion": "rcodetools",
+  "ruby.lint": {
+    "rubocop": true
+  },
 
   // ---- ELIXIR ----
   "[elixir]": {
