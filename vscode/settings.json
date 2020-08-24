@@ -35,7 +35,6 @@
   "explorer.openEditors.visible": 0,
   "explorer.autoReveal": false,
   "explorer.confirmDragAndDrop": false,
-  "window.zoomLevel": 0,
 
   // ---- TERMINAL ----
   "terminal.integrated.fontFamily": "SF Mono",
@@ -132,5 +131,6 @@
   "editor.wrappingIndent": "indent",
   "elixirLS.suggestSpecs": false,
   "editor.renderWhitespace": "all",
-  "workbench.colorTheme": "Monokai Pro (Filter Octagon)"
+  "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
+  "window.zoomLevel": 1
 }

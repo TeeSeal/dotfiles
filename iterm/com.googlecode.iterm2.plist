@@ -962,6 +962,8 @@
 	<false/>
 	<key>EnableProxyIcon</key>
 	<true/>
+	<key>FlashTabBarInFullscreen</key>
+	<false/>
 	<key>GlobalKeyMap</key>
 	<dict>
 		<key>0x19-0x60000</key>
@@ -1173,7 +1175,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>226 137 840 507 0 0 1440 877 </string>
+	<string>0 0 1440 878 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2161,7 +2163,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>E3D9BFA7-2E21-4BAA-87AC-A980C9C4CD24</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>98</integer>
+	<integer>117</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2962,7 +2964,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-07-06T07:24:52Z</date>
+	<date>2020-08-18T14:07:39Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
@@ -2972,7 +2974,7 @@
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>ShowMetalFPSmeter</key>
 	<false/>
 	<key>ShowPaneTitles</key>

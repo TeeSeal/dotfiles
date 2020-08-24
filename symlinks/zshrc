@@ -19,6 +19,7 @@ SAVEHIST=10000000
 setopt HIST_IGNORE_DUPS
 setopt HIST_FIND_NO_DUPS
 setopt INC_APPEND_HISTORY
+setopt HIST_IGNORE_SPACE
 
 # Configs
 zplug "$DOTFILES", from:local, use:"configs/*"
