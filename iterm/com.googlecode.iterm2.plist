@@ -1139,7 +1139,7 @@
 		<string>0.000000, 259.000000, 224.000000, 48.000000, NO, NO</string>
 	</array>
 	<key>NSStatusItem Preferred Position Item-0</key>
-	<real>371</real>
+	<real>369</real>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -1169,7 +1169,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>546 522 347 181 0 0 1440 877 </string>
+	<string>2546 927 347 181 0 0 1440 877 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>975 563 400 129 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
@@ -2134,7 +2134,7 @@
 			<key>Visual Bell</key>
 			<false/>
 			<key>Window Type</key>
-			<integer>13</integer>
+			<integer>1</integer>
 			<key>Working Directory</key>
 			<string>/Users/TeeSeal</string>
 		</dict>
@@ -2158,12 +2158,12 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{408, 846}</string>
+		<string>{407, 847}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>E3D9BFA7-2E21-4BAA-87AC-A980C9C4CD24</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>117</integer>
+	<integer>156</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2964,7 +2964,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-08-18T14:07:39Z</date>
+	<date>2020-11-05T08:36:06Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>

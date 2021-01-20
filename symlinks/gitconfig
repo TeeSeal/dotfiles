@@ -19,3 +19,5 @@
 	undof = "!f() { git reset --hard \"HEAD~$1\"; }; f"
 [pull]
 	rebase = false
+[sequence]
+	editor = code --wait

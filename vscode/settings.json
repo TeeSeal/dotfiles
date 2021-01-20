@@ -47,8 +47,6 @@
   "gitlens.keymap": "chorded",
   "gitlens.defaultDateFormat": "YYYY-MM-DD \\a\\t hh:mm",
   "gitlens.codeLens.recentChange.enabled": false,
-  "gitlens.codeLens.enabled": false,
-  "gitlens.statusBar.enabled": false,
   "gitlens.views.repositories.location": "scm",
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
@@ -91,8 +89,6 @@
 
   // ---- RUBY ----
   "ruby.format": "rubocop",
-  "ruby.intellisense": "rubyLocate",
-  "ruby.codeCompletion": "rcodetools",
   "ruby.lint": {
     "rubocop": true
   },
@@ -131,6 +127,17 @@
   "editor.wrappingIndent": "indent",
   "elixirLS.suggestSpecs": false,
   "editor.renderWhitespace": "all",
+  "window.zoomLevel": 0,
+  "files.autoSave": "onFocusChange",
+  "search.useIgnoreFiles": false,
   "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
-  "window.zoomLevel": 1
+  "gitlens.remotes": [
+    {
+      "domain": "git.saltedge.com",
+      "type": "GitLab",
+      "name": "Salt Edge"
+    }
+  ],
+  "gitlens.codeLens.enabled": false,
+  "gitlens.statusBar.enabled": false
 }
