@@ -6,4 +6,4 @@ if ! yn; then
 fi
 echo
 
-which code >/dev/null 2>&1 || brew cask install visual-studio-code
+which code >/dev/null 2>&1 || brew install --cask visual-studio-code

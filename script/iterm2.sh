@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-brew cask list iterm2 >/dev/null 2>&1 && return
+brew list --cask iterm2 >/dev/null 2>&1 && return
 
 printf "Install iTerm2? [y/n]: "
 if ! yn; then
@@ -8,4 +8,4 @@ if ! yn; then
 fi
 echo
 
-brew cask install iterm2
+brew install --cask iterm2
