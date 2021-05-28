@@ -8,7 +8,7 @@ call plug#begin()
 	Plug 'ryanoasis/vim-devicons'
 	Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 	Plug 'airblade/vim-gitgutter'
-	Plug '/usr/local/opt/fzf'
+	Plug $HOMEBREW_HOME . '/opt/fzf'
 	Plug 'junegunn/fzf.vim'
 	Plug 'tpope/vim-bundler'
 call plug#end()

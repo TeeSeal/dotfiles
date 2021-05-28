@@ -1,6 +1,6 @@
-if [ -f /usr/local/opt/chruby/share/chruby/chruby.sh ]; then
-  source /usr/local/opt/chruby/share/chruby/chruby.sh
-  source /usr/local/opt/chruby/share/chruby/auto.sh
+if [ -f "$HOMEBREW_PREFIX/opt/chruby/share/chruby/chruby.sh" ]; then
+  source "$HOMEBREW_PREFIX/opt/chruby/share/chruby/chruby.sh"
+  source "$HOMEBREW_PREFIX/opt/chruby/share/chruby/auto.sh"
 fi
 
 function ruby-gen-tags() {

@@ -1,5 +1,7 @@
+[ -f "/opt/homebrew/bin/brew" ] && eval "$(/opt/homebrew/bin/brew shellenv)"
+
 export DOTFILES="$HOME/.dotfiles"
-export ZPLUG_HOME=/usr/local/opt/zplug
+export ZPLUG_HOME=$HOMEBREW_PREFIX/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
 # GPG
