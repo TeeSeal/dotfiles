@@ -14,7 +14,7 @@ set encoding=UTF-8
 set lcs=eol:¬,space:·,tab:»\ ,trail:·
 set updatetime=50
 set clipboard=unnamed
-set rtp+=$HOMEBREW_HOME . '/opt/fzf'
+exe 'set rtp+=' . $HOMEBREW_HOME . '/opt/fzf'
 
 " Theme setup
 let g:dracula_italic = 0
