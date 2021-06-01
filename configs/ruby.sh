@@ -1,6 +1,14 @@
 if [ -f "$HOMEBREW_PREFIX/opt/chruby/share/chruby/chruby.sh" ]; then
   source "$HOMEBREW_PREFIX/opt/chruby/share/chruby/chruby.sh"
   source "$HOMEBREW_PREFIX/opt/chruby/share/chruby/auto.sh"
+
+  if [ -v HOME -a ${PWD##$HOME} = $PWD ]; then
+    export PREVIOUS_DIRECTORY=$PWD
+    cd $HOME
+    chruby_auto
+    cd $PREVIOUS_DIRECTORY
+    unset PREVIOUS_DIRECTORY
+  fi
 fi
 
 function ruby-gen-tags() {
