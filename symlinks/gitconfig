@@ -17,15 +17,25 @@
 	squash = "!f() { git reset --soft \"HEAD~$1\"; git commit -m \"$2\"; }; f"
 	undo = "!f() { git reset --soft \"HEAD~$1\"; }; f"
 	undof = "!f() { git reset --hard \"HEAD~$1\"; }; f"
-	cleanup = "!f() {\
-		git checkout master && \
-		git pull upstream master && \
-		git push; \
-		local branches_to_delete=$(git branch --no-color --merged master | grep -vE master); \
-		echo $branches_to_delete | xargs -n 1 git push --delete origin; \
+	delete-merged-branches = "!f() { \
+		local default_branch=$(git config init.defaultBranch); \
+		local branches_to_delete=$(git branch --no-color --merged $default_branch | grep -vE $default_branch);\
 		echo $branches_to_delete | xargs -n 1 git branch -d; \
+	}; f"
+	delete-remote-merged-branches = "!f() { \
+		local default_branch=$(git config init.defaultBranch); \
+		local branches_to_delete=$(git branch --no-color --merged $default_branch | grep -vE $default_branch); \
+		echo $branches_to_delete | xargs -n 1 git push --delete origin; \
+	}; f"
+	cleanup = "!f() { \
+		local default_branch=$(git config init.defaultBranch); \
+		git checkout $default_branch && git pull upstream $default_branch && git push; \
+		git delete-remote-merged-branches; \
+		git delete-merged-branches; \
 	}; f"
 [pull]
 	rebase = false
 [sequence]
 	editor = code --wait
+[init]
+	defaultBranch = main
