@@ -10,11 +10,10 @@ autoload -Uz _zi
 
 zi wait lucid light-mode for \
   multisrc="*" "$DOTFILES/configs" \
-  iridakos/goto \
-  zsh-users/zsh-completions \
+  OMZP::git \
   atload="_zsh_autosuggest_start" zsh-users/zsh-autosuggestions \
-  if="which git >/dev/null 2>&1" OMZP::git \
-  if="which bundler >/dev/null 2>&1" OMZP::bundler
+  iridakos/goto \
+  atload="zicompinit; zicdreplay" zsh-users/zsh-completions
 
 zi light-mode for \
   pick="async.zsh" src="pure.zsh" sindresorhus/pure \
@@ -53,7 +52,6 @@ typeset -aU path
 
 # Completions
 fpath+=($HOMEBREW_PREFIX/share/zsh/site-functions)
-autoload -Uz compinit; compinit
 
 zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
