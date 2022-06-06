@@ -29,10 +29,14 @@ type git >/dev/null 2>&1 || {
   brew install git
 }
 
-# zplug acts weird with `type` so gotta check with brew
 brew list zplug >/dev/null 2>&1 || {
   echo "📦  Installing zplug..."
   brew install zplug
+}
+
+brew list asdf >/dev/null 2>&1 || {
+  echo "🪛  Installing asdf..."
+  brew install asdf
 }
 
 source "$DOTFILES/script/iterm2.sh"

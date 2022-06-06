@@ -42,6 +42,9 @@ zplug check --verbose || zplug install
 # Load plugins
 zplug load
 
+# asdf
+[ -f "$HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh" ] && source "$HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh"
+
 # Source fzf if present
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
