@@ -29,12 +29,13 @@ type git >/dev/null 2>&1 || {
   brew install git
 }
 
-brew list zplug >/dev/null 2>&1 || {
-  echo "📦  Installing zplug..."
-  brew install zplug
+type zi >/dev/null 2>&1 || {
+  echo "📦  Installing zi..."
+  source <(curl -sL https://git.io/zi-loader)
+  zzinit
 }
 
-brew list asdf >/dev/null 2>&1 || {
+type asdf >/dev/null 2>&1 || {
   echo "🪛  Installing asdf..."
   brew install asdf
 }

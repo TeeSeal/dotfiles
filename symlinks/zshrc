@@ -1,8 +1,24 @@
 [ -f "/opt/homebrew/bin/brew" ] && eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export DOTFILES="$HOME/.dotfiles"
-export ZPLUG_HOME=$HOMEBREW_PREFIX/opt/zplug
-source $ZPLUG_HOME/init.zsh
+export ZI_HOME="$HOME/.zi"
+
+# Plugins
+source "$ZI_HOME/bin/zi.zsh"
+autoload -Uz _zi
+(( ${+_comps} )) && _comps[zi]=_zi
+
+zi wait lucid light-mode for \
+  multisrc="*" "$DOTFILES/configs" \
+  iridakos/goto \
+  atload="_zsh_autosuggest_start" zsh-users/zsh-autosuggestions \
+  if="which git >/dev/null 2>&1" OMZP::git \
+  if="which bundler >/dev/null 2>&1" OMZP::bundler
+
+zi light-mode for \
+  mafredri/zsh-async \
+  pick="async.zsh" src="pure.zsh" sindresorhus/pure \
+  z-shell/F-Sy-H
 
 # GPG
 export GPG_TTY=$(tty)
@@ -22,25 +38,6 @@ setopt HIST_IGNORE_DUPS
 setopt HIST_FIND_NO_DUPS
 setopt INC_APPEND_HISTORY
 setopt HIST_IGNORE_SPACE
-
-# Configs
-zplug "$DOTFILES", from:local, use:"configs/*"
-
-# From Oh My Zsh
-zplug plugins/git,     from:oh-my-zsh, if:"which git"
-zplug plugins/bundler, from:oh-my-zsh, if:"which bundler"
-
-zplug mafredri/zsh-async, use:async.zsh
-zplug sindresorhus/pure, use:pure.zsh, as:theme, at:main
-zplug zsh-users/zsh-autosuggestions
-zplug zdharma/fast-syntax-highlighting, at:main
-zplug iridakos/goto, use:goto.sh
-
-# Install missing plugins if needed
-zplug check --verbose || zplug install
-
-# Load plugins
-zplug load
 
 # asdf
 [ -f "$HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh" ] && source "$HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh"
