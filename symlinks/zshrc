@@ -31,9 +31,9 @@ zplug plugins/git,     from:oh-my-zsh, if:"which git"
 zplug plugins/bundler, from:oh-my-zsh, if:"which bundler"
 
 zplug mafredri/zsh-async, use:async.zsh
-zplug sindresorhus/pure, use:pure.zsh, as:theme
+zplug sindresorhus/pure, use:pure.zsh, as:theme, at:main
 zplug zsh-users/zsh-autosuggestions
-zplug zdharma/fast-syntax-highlighting
+zplug zdharma/fast-syntax-highlighting, at:main
 zplug iridakos/goto, use:goto.sh
 
 # Install missing plugins if needed
