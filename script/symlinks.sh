@@ -18,9 +18,18 @@ link_file() {
   echo "✅  linked $1 to $2"
 }
 
-for src in $(ls "$DOTFILES/symlinks"); do
-  link_file "$DOTFILES/symlinks/$src" "$HOME/.$src"
+local home="$DOTFILES/symlinks/home"
+for src in $(find $home -type f); do
+  local file_path="$HOME/$(basename $src)"
+  link_file $src $file_path
 done
 
-mkdir -p "$HOME/.dotfiles"
-link_file "$DOTFILES/plugins" "$HOME/.dotfiles/public-plugins"
+local configs="$DOTFILES/symlinks/config"
+for src in $(find $configs -type f); do
+  local file_path="${XDG_CONFIG_HOME:-$HOME/.config}${src#$configs}"
+  mkdir -p $(dirname $file_path)
+  link_file $src $file_path
+done
+
+# mkdir -p "$HOME/.dotfiles"
+# link_file "$DOTFILES/plugins" "$HOME/.dotfiles/public-plugins"

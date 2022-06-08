@@ -1,9 +1,7 @@
 [ -f "/opt/homebrew/bin/brew" ] && eval "$(/opt/homebrew/bin/brew shellenv)"
 
-export DOTFILES="$HOME/.dotfiles"
-export ZI_HOME="$HOME/.zi"
-
 # Plugins
+export ZI_HOME="$HOME/.zi"
 source "$ZI_HOME/bin/zi.zsh"
 autoload -Uz _zi
 (( ${+_comps} )) && _comps[zi]=_zi
@@ -20,15 +18,8 @@ zi light-mode for \
   pick="async.zsh" src="pure.zsh" sindresorhus/pure \
   z-shell/F-Sy-H
 
-# GPG
-export GPG_TTY=$(tty)
-
-# Colors
-export CLICOLOR=1
-export LSCOLORS="Gxfxcxdxbxegedabagacad"
-
 # History
-HISTFILE="$HOME/.zsh_history"
+HISTFILE="$XDG_STATE_HOME/zsh/history"
 HISTSIZE=10000000
 SAVEHIST=10000000
 setopt HIST_IGNORE_DUPS
