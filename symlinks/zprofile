@@ -1,7 +1,5 @@
-function source_if_exists { [ -f $1 ] && . $1 }
-
 # Fig pre block. Keep at the top of this file.
-source_if_exists "$HOME/.fig/shell/zprofile.pre.zsh"
+[ -f "$HOME/.fig/shell/zprofile.pre.zsh" ] && . "$HOME/.fig/shell/zprofile.pre.zsh"
 
 DEFAULT_USER="teeseal"
 EDITOR="vim"
@@ -10,4 +8,4 @@ export LANG="en_GB.UTF-8"
 export LC_ALL="en_US.UTF-8"
 
 # Fig post block. Keep at the bottom of this file.
-source_if_exists "$HOME/.fig/shell/zprofile.post.zsh"
+[ -f "$HOME/.fig/shell/zprofile.post.zsh" ] && . "$HOME/.fig/shell/zprofile.post.zsh"

@@ -1,5 +1,5 @@
 # Fig pre block. Keep at the top of this file.
-source_if_exists "$HOME/.fig/shell/zshrc.pre.zsh"
+[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ] && . "$HOME/.fig/shell/zshrc.pre.zsh"
 
 [ -f "/opt/homebrew/bin/brew" ] && eval "$(/opt/homebrew/bin/brew shellenv)"
 
@@ -39,16 +39,16 @@ setopt INC_APPEND_HISTORY
 setopt HIST_IGNORE_SPACE
 
 # asdf
-source_if_exists "$HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh"
+[ -f "$HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh" ] && . "$HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh"
 
 # Source fzf if present
-source_if_exists "$HOME/.fzf.zsh"
+[ -f "$HOME/.fzf.zsh" ] && . "$HOME/.fzf.zsh"
 
 # Source localrc
-source_if_exists "$HOME/.localrc"
+[ -f "$HOME/.localrc" ] && . "$HOME/.localrc"
 
 # Source secretrc
-source_if_exists "$HOME/.secretrc"
+[ -f "$HOME/.secretrc" ] && . "$HOME/.secretrc"
 
 # Make all PATH entires unique
 typeset -aU path
@@ -74,4 +74,4 @@ setopt AUTO_LIST     # Show list on first Tab press
 setopt NO_LIST_BEEP  # Prevent beeps when showing list
 
 # Fig post block. Keep at the bottom of this file.
-source_if_exists "$HOME/.fig/shell/zshrc.post.zsh"
+[ -f "$HOME/.fig/shell/zshrc.post.zsh" ] && . "$HOME/.fig/shell/zshrc.post.zsh"
