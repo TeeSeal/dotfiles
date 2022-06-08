@@ -10,6 +10,7 @@ autoload -Uz _zi
 
 zi wait lucid light-mode for \
   multisrc="*" "$DOTFILES/configs" \
+  OMZ::lib/git.zsh \
   OMZP::git \
   atload="_zsh_autosuggest_start" zsh-users/zsh-autosuggestions \
   iridakos/goto \
