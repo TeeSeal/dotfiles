@@ -31,8 +31,7 @@ type git >/dev/null 2>&1 || {
 
 type zi >/dev/null 2>&1 || {
   echo "📦  Installing zi..."
-  source <(curl -sL https://git.io/zi-loader)
-  zzinit
+  sh -c "$(curl -fsSL https://git.io/get-zi)" --
 }
 
 type asdf >/dev/null 2>&1 || {
