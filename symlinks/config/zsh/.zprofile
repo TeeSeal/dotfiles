@@ -3,10 +3,12 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
 
-DOTFILES="$HOME/.dotfiles"
-LESSHISTFILE=$XDG_STATE_HOME/lesshst
-CLICOLOR=1
-LSCOLORS="Gxfxcxdxbxegedabagacad"
+export DOTFILES="$HOME/.dotfiles"
+
+export LESSHISTFILE=$XDG_STATE_HOME/lesshst
+
+export CLICOLOR=1
+export LSCOLORS="Gxfxcxdxbxegedabagacad"
 
 export LANG="en_GB.UTF-8"
 export LC_ALL="en_US.UTF-8"
