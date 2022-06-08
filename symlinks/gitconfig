@@ -43,3 +43,5 @@
 	editor = code --wait
 [init]
 	defaultBranch = main
+[include]
+	path = ~/.gitconfig.local
