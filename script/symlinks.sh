@@ -21,3 +21,6 @@ link_file() {
 for src in $(ls "$DOTFILES/symlinks"); do
   link_file "$DOTFILES/symlinks/$src" "$HOME/.$src"
 done
+
+mkdir -p "$HOME/.dotfiles"
+link_file "$DOTFILES/plugins" "$HOME/.dotfiles/public-plugins"
