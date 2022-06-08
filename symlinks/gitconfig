@@ -1,7 +1,7 @@
 # This is Git's per-user configuration file.
 [user]
 	name = Alex Hincu
-	email = teeseal@sorta.moe
+	email = alex@teeseal.dev
 	signingKey = 1179468EE5D69764
 [http]
 	postBuffer = 524288000
