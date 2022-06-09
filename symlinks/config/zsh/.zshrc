@@ -31,7 +31,7 @@ setopt HIST_IGNORE_SPACE
 [ -f "$HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh" ] && . "$HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh"
 
 # Source fzf if present
-[ -f "$HOME/.fzf.zsh" ] && . "$HOME/.fzf.zsh"
+[ -f "$DOTFILES/fzf.zsh" ] && . "$DOTFILES/fzf.zsh"
 
 # Source localrc
 [ -f "$HOME/.localrc" ] && . "$HOME/.localrc"
