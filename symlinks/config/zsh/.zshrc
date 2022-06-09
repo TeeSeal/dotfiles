@@ -33,9 +33,6 @@ setopt HIST_IGNORE_SPACE
 # Source fzf if present
 [ -f "$DOTFILES/fzf.zsh" ] && source "$DOTFILES/fzf.zsh"
 
-# Source local zshrc
-[ -f "$XDG_CONFIG_HOME/zsh/.zshrc.local" ] && source "$XDG_CONFIG_HOME/zsh/.zshrc.local"
-
 # Make all PATH entires unique
 typeset -aU path
 
@@ -58,3 +55,6 @@ zstyle ':completion:*:*:cd:*' tag-order local-directories directory-stack path-d
 setopt MENU_COMPLETE # Automatically select first option
 setopt AUTO_LIST     # Show list on first Tab press
 setopt NO_LIST_BEEP  # Prevent beeps when showing list
+
+# Source local zshrc
+[ -f "$XDG_CONFIG_HOME/zsh/.zshrc.local" ] && source "$XDG_CONFIG_HOME/zsh/.zshrc.local"
