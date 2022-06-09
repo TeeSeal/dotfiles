@@ -33,11 +33,8 @@ setopt HIST_IGNORE_SPACE
 # Source fzf if present
 [ -f "$DOTFILES/fzf.zsh" ] && . "$DOTFILES/fzf.zsh"
 
-# Source localrc
-[ -f "$HOME/.localrc" ] && . "$HOME/.localrc"
-
-# Source secretrc
-[ -f "$HOME/.secretrc" ] && . "$HOME/.secretrc"
+# Source local zshrc
+[ -f "$XDG_CONFIG_HOME/zsh/.zshrc.local" ] && . "$XDG_CONFIG_HOME/zsh/.zshrc.local"
 
 # Make all PATH entires unique
 typeset -aU path
