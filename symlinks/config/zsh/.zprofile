@@ -25,4 +25,4 @@ export ASDF_DATA_DIR="$XDG_DATA_HOME/asdf"
 export ASDF_CONFIG_FILE="$XDG_CONFIG_HOME/asdf/asdfrc"
 
 # Source local zprofile
-[ -f "$XDG_CONFIG_HOME/zsh/.zprofile.local" ] && . "$XDG_CONFIG_HOME/zsh/.zprofile.local"
+[ -f "$XDG_CONFIG_HOME/zsh/.zprofile.local" ] && source "$XDG_CONFIG_HOME/zsh/.zprofile.local"

@@ -31,10 +31,10 @@ setopt HIST_IGNORE_SPACE
 [ -f "$HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh" ] && . "$HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh"
 
 # Source fzf if present
-[ -f "$DOTFILES/fzf.zsh" ] && . "$DOTFILES/fzf.zsh"
+[ -f "$DOTFILES/fzf.zsh" ] && source "$DOTFILES/fzf.zsh"
 
 # Source local zshrc
-[ -f "$XDG_CONFIG_HOME/zsh/.zshrc.local" ] && . "$XDG_CONFIG_HOME/zsh/.zshrc.local"
+[ -f "$XDG_CONFIG_HOME/zsh/.zshrc.local" ] && source "$XDG_CONFIG_HOME/zsh/.zshrc.local"
 
 # Make all PATH entires unique
 typeset -aU path
