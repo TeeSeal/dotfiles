@@ -41,6 +41,11 @@ type asdf >/dev/null 2>&1 || {
   brew install asdf
 }
 
+type fzf >/dev/null 2>&1 || {
+  echo "🔎  Installing fzf..."
+  brew install fzf
+}
+
 source "$DOTFILES/script/iterm2.sh"
 source "$DOTFILES/script/nvim.sh"
 source "$DOTFILES/script/vscode.sh"
