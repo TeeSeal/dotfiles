@@ -1,5 +1,8 @@
 [ -f "/opt/homebrew/bin/brew" ] && eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# Path
+path+=($HOME/.local/bin)
+
 # Plugins
 source "$XDG_DATA_HOME/zinit/zinit.git/zinit.zsh"
 
