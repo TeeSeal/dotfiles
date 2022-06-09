@@ -30,6 +30,3 @@ for src in $(find $configs -type f); do
   mkdir -p $(dirname $file_path)
   link_file $src $file_path
 done
-
-# mkdir -p "$HOME/.dotfiles"
-# link_file "$DOTFILES/plugins" "$HOME/.dotfiles/public-plugins"

@@ -4,7 +4,7 @@
 source "$XDG_DATA_HOME/zinit/zinit.git/zinit.zsh"
 
 zinit wait lucid light-mode for \
-  multisrc="*" "$DOTFILES/public-plugins" \
+  multisrc="*" "$ZDOTDIR/plugins" \
   OMZ::lib/git.zsh \
   OMZP::git \
   iridakos/goto \
@@ -23,12 +23,6 @@ setopt HIST_IGNORE_DUPS
 setopt HIST_FIND_NO_DUPS
 setopt INC_APPEND_HISTORY
 setopt HIST_IGNORE_SPACE
-
-# asdf
-[ -f "$HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh" ] && . "$HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh"
-
-# Source fzf if present
-[ -f "$DOTFILES/fzf.zsh" ] && source "$DOTFILES/fzf.zsh"
 
 # Make all PATH entires unique
 typeset -aU path
