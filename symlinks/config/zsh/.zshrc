@@ -4,7 +4,6 @@
 source "$XDG_DATA_HOME/zinit/zinit.git/zinit.zsh"
 
 zinit wait lucid light-mode for \
-  multisrc="*" "$ZDOTDIR/plugins" \
   OMZ::lib/git.zsh \
   OMZP::git \
   iridakos/goto \
@@ -13,6 +12,7 @@ zinit wait lucid light-mode for \
   atinit="zicompinit; zicdreplay" zdharma-continuum/fast-syntax-highlighting
 
 zinit light-mode for \
+  multisrc="*" "$ZDOTDIR/plugins" \
   pick="async.zsh" src="pure.zsh" sindresorhus/pure
 
 # History
