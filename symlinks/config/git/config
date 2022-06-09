@@ -6,7 +6,6 @@
 [http]
 	postBuffer = 524288000
 [core]
-	excludesfile = ~/.gitignore
 	editor = nvim
 [diff]
 	tool = vimdiff
