@@ -1,22 +1,19 @@
 [ -f "/opt/homebrew/bin/brew" ] && eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Plugins
-export ZI_HOME="$HOME/.zi"
-source "$ZI_HOME/bin/zi.zsh"
-autoload -Uz _zi
-(( ${+_comps} )) && _comps[zi]=_zi
+source "$XDG_DATA_HOME/zinit/zinit.git/zinit.zsh"
 
-zi wait lucid light-mode for \
+zinit wait lucid light-mode for \
   multisrc="*" "$DOTFILES/public-plugins" \
   OMZ::lib/git.zsh \
   OMZP::git \
-  atload="_zsh_autosuggest_start" zsh-users/zsh-autosuggestions \
   iridakos/goto \
-  atload="zicompinit; zicdreplay" zsh-users/zsh-completions
+  zsh-users/zsh-completions \
+  atload="_zsh_autosuggest_start" zsh-users/zsh-autosuggestions \
+  atinit="zicompinit; zicdreplay" zdharma-continuum/fast-syntax-highlighting
 
-zi light-mode for \
-  pick="async.zsh" src="pure.zsh" sindresorhus/pure \
-  z-shell/F-Sy-H
+zinit light-mode for \
+  pick="async.zsh" src="pure.zsh" sindresorhus/pure
 
 # History
 HISTFILE="$XDG_STATE_HOME/zsh/history"

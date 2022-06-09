@@ -29,9 +29,11 @@ type git >/dev/null 2>&1 || {
   brew install git
 }
 
-type zi >/dev/null 2>&1 || {
-  echo "📦  Installing zi..."
-  sh -c "$(curl -fsSL https://git.io/get-zi)" --
+type zinit >/dev/null 2>&1 || {
+  echo "📦  Installing zinit..."
+  ZINIT_HOME="${XDG_DATA_HOME}/zinit/zinit.git"
+  mkdir -p "$(dirname $ZINIT_HOME)"
+  git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 }
 
 type asdf >/dev/null 2>&1 || {
