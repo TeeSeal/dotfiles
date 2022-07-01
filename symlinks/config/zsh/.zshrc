@@ -52,3 +52,6 @@ setopt NO_LIST_BEEP  # Prevent beeps when showing list
 
 # Source local zshrc
 [ -f "$XDG_CONFIG_HOME/zsh/.zshrc.local" ] && source "$XDG_CONFIG_HOME/zsh/.zshrc.local"
+
+# Ensure emcas mode
+set -o emacs
