@@ -44,3 +44,5 @@
 	defaultBranch = main
 [include]
 	path = config.local
+[push]
+	autoSetupRemote = true
