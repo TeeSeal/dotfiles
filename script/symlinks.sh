@@ -18,15 +18,15 @@ link_file() {
   echo "✅  linked $1 to $2"
 }
 
-local home="$DOTFILES/symlinks/home"
-for src in $(find $home -type f); do
-  local file_path="$HOME/$(basename $src)"
-  link_file $src $file_path
+SYMLINKS_HOME="$DOTFILES/symlinks/home"
+for SRC in $(find $SYMLINKS_HOME -type f); do
+  FILE_PATH="$HOME/$(basename $SRC)"
+  link_file $SRC $FILE_PATH
 done
 
-local configs="$DOTFILES/symlinks/config"
-for src in $(find $configs -type f); do
-  local file_path="${XDG_CONFIG_HOME:-$HOME/.config}${src#$configs}"
-  mkdir -p $(dirname $file_path)
-  link_file $src $file_path
+CONFIGS_HOME="$DOTFILES/symlinks/config"
+for src in $(find $CONFIGS_HOME -type f); do
+  FILE_PATH="${XDG_CONFIG_HOME:-$HOME/.config}${src#$CONFIGS_HOME}"
+  mkdir -p $(dirname $FILE_PATH)
+  link_file $src $FILE_PATH
 done
