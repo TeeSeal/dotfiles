@@ -27,3 +27,6 @@ export RTX_CACHE_DIR="$XDG_CACHE_HOME/rtx"
 
 # Source local zprofile
 [ -f "$XDG_CONFIG_HOME/zsh/.zprofile.local" ] && source "$XDG_CONFIG_HOME/zsh/.zprofile.local"
+
+# Added by OrbStack: command-line tools and integration
+source ~/.orbstack/shell/init.zsh 2>/dev/null || :
