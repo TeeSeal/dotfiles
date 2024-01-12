@@ -21,9 +21,10 @@ export SHELL_SESSION_FILE="$SHELL_SESSION_DIR/$TERM_SESSION_ID"
 
 export GPG_TTY=$(tty)
 
-export RTX_DATA_DIR="$XDG_DATA_HOME/rtx"
-export RTX_CONFIG_FILE="$XDG_CONFIG_HOME/rtx"
-export RTX_CACHE_DIR="$XDG_CACHE_HOME/rtx"
+export MISE_DATA_DIR="$XDG_DATA_HOME/mise"
+export MISE_CONFIG_FILE="$XDG_CONFIG_HOME/mise"
+export MISE_CACHE_DIR="$XDG_CACHE_HOME/mise"
+export PATH="$MISE_DATA_DIR/shims:$PATH"
 
 # Source local zprofile
 [ -f "$XDG_CONFIG_HOME/zsh/.zprofile.local" ] && source "$XDG_CONFIG_HOME/zsh/.zprofile.local"

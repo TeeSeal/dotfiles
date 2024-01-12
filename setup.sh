@@ -36,9 +36,9 @@ type zinit >/dev/null 2>&1 || {
   git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 }
 
-type rtx >/dev/null 2>&1 || {
-  echo "🪛  Installing rtx..."
-  brew install rtx
+type mise >/dev/null 2>&1 || {
+  echo "🪛  Installing mise..."
+  brew install mise
 }
 
 type fzf >/dev/null 2>&1 || {
