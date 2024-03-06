@@ -8,16 +8,13 @@ echo
 
 which nvim >/dev/null 2>&1 || brew install nvim
 
-NVIM_PATH="$HOME/.config/nvim"
-AUTOLOAD_PATH="$NVIM_PATH/autoload"
+NVIM_PATH="${XDG_CONFIG_HOME:-$HOME/.config}/nvim"
 
 [ -e "$NVIM_PATH" ] || mkdir -p "$NVIM_PATH"
-ln -sf "$DOTFILES/nvim/init.vim" "$NVIM_PATH/init.vim"
+
+for SOURCE in $(find "$DOTFILES/nvim" -depth 1); do
+  TARGET="$NVIM_PATH/$(basename $SOURCE)"
+  ln -sf $SOURCE $TARGET
+done
 
 echo "✅  linked config file"
-
-if ! [ -e "$AUTOLOAD_PATH/plug.vim" ]; then
-  echo "Installing VimPlug"
-  curl -fLo "$AUTOLOAD_PATH/plug.vim" --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-fi
