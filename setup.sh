@@ -3,47 +3,47 @@
 export DOTFILES=$(cd "$(dirname "$0")"; pwd)
 
 yn() {
-  while true; do
-    read response
-    case $response in
-        [Yy]* ) return 0;;
-        [Nn]* ) return 1;;
-        * ) echo "Please answer with 'y' or 'n'.";;
-    esac
-  done
+	while true; do
+		read response
+		case $response in
+				[Yy]* ) return 0;;
+				[Nn]* ) return 1;;
+				* ) echo "Please answer with 'y' or 'n'.";;
+		esac
+	done
 }
 
 type brew >/dev/null 2>&1 || {
-  echo "🍺  Installing Homebrew..."
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	echo "🍺  Installing Homebrew..."
+	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 }
 
 type zsh >/dev/null 2>&1 || {
-  echo "💻  Installing zsh..."
-  brew install zsh
-  chsh -s $(which zsh)
+	echo "💻  Installing zsh..."
+	brew install zsh
+	chsh -s $(which zsh)
 }
 
 type git >/dev/null 2>&1 || {
-  echo "🔀  Installing git..."
-  brew install git
+	echo "🔀  Installing git..."
+	brew install git
 }
 
 type zinit >/dev/null 2>&1 || {
-  echo "📦  Installing zinit..."
-  ZINIT_HOME="${XDG_DATA_HOME}/zinit/zinit.git"
-  mkdir -p "$(dirname $ZINIT_HOME)"
-  git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+	echo "📦  Installing zinit..."
+	ZINIT_HOME="${XDG_DATA_HOME}/zinit/zinit.git"
+	mkdir -p "$(dirname $ZINIT_HOME)"
+	git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 }
 
 type mise >/dev/null 2>&1 || {
-  echo "🪛  Installing mise..."
-  brew install mise
+	echo "🪛  Installing mise..."
+	brew install mise
 }
 
 type fzf >/dev/null 2>&1 || {
-  echo "🔎  Installing fzf..."
-  brew install fzf
+	echo "🔎  Installing fzf..."
+	brew install fzf
 }
 
 source "$DOTFILES/script/iterm2.sh"

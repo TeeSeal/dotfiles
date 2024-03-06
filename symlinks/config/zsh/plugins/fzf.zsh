@@ -1,7 +1,7 @@
 # Setup fzf
 # ---------
 if [[ ! "$PATH" == *$HOMEBREW_PREFIX/opt/fzf/bin* ]]; then
-  export PATH="${PATH:+${PATH}:}$HOMEBREW_PREFIX/opt/fzf/bin"
+	export PATH="${PATH:+${PATH}:}$HOMEBREW_PREFIX/opt/fzf/bin"
 fi
 
 # Auto-completion

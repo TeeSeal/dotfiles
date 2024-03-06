@@ -2,7 +2,7 @@
 
 printf "Install Visual Studio Code? [y/n]: "
 if ! yn; then
-  echo; return
+	echo; return
 fi
 echo
 

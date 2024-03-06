@@ -7,16 +7,16 @@ path+=($HOME/.local/bin)
 source "$XDG_DATA_HOME/zinit/zinit.git/zinit.zsh"
 
 zinit wait lucid light-mode for \
-  OMZ::lib/git.zsh \
-  OMZP::git \
-  iridakos/goto \
-  zsh-users/zsh-completions \
-  atload="_zsh_autosuggest_start" zsh-users/zsh-autosuggestions \
-  atinit="zicompinit; zicdreplay" zdharma-continuum/fast-syntax-highlighting
+	OMZ::lib/git.zsh \
+	OMZP::git \
+	iridakos/goto \
+	zsh-users/zsh-completions \
+	atload="_zsh_autosuggest_start" zsh-users/zsh-autosuggestions \
+	atinit="zicompinit; zicdreplay" zdharma-continuum/fast-syntax-highlighting
 
 zinit light-mode for \
-  multisrc="*" "$ZDOTDIR/plugins" \
-  pick="async.zsh" src="pure.zsh" sindresorhus/pure
+	multisrc="*" "$ZDOTDIR/plugins" \
+	pick="async.zsh" src="pure.zsh" sindresorhus/pure
 
 # History
 HISTFILE="$XDG_STATE_HOME/zsh/history"
