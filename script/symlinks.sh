@@ -6,16 +6,16 @@ echo "🔗  SYMLINKS"
 link_file() {
 	if [ -e "$2" ]; then
 		if [ "$1" -ef "$2" ]; then
-			echo "✅  $1 already linked"
+			echo "OK:  $1 already linked"
 			return 0
 		else
 			mv "$2" "$2.bak"
-			echo "⚠️  moved $2 to $2.bak"
+			echo "WARN:  moved $2 to $2.bak"
 		fi
 	fi
 
 	ln -sf "$1" "$2"
-	echo "✅  linked $1 to $2"
+	echo "OK:  linked $1 to $2"
 }
 
 SYMLINKS_HOME="$DOTFILES/symlinks/home"
