@@ -1,4 +1,11 @@
 type mise >/dev/null 2>&1 && {
+	export MISE_DATA_DIR="$XDG_DATA_HOME/mise"
+	export MISE_CONFIG_FILE="$XDG_CONFIG_HOME/mise"
+	export MISE_CACHE_DIR="$XDG_CACHE_HOME/mise"
+	export PATH="$PATH:$MISE_DATA_DIR/shims"
+	export MISE_SHELL="zsh"
+	export __MISE_ORIG_PATH="$PATH"
+
 	mise() {
 		local command
 		command="${1:-}"
@@ -33,21 +40,19 @@ type mise >/dev/null 2>&1 && {
 	fi
 
 	if [ -z "${_mise_cmd_not_found:-}" ]; then
-			_mise_cmd_not_found=1
-			test -n "$(declare -f command_not_found_handler)" && eval "${_/command_not_found_handler/_command_not_found_handler}"
+		_mise_cmd_not_found=1
+		[ -n "$(declare -f command_not_found_handler)" ] && eval "${$(declare -f command_not_found_handler)/command_not_found_handler/_command_not_found_handler}"
 
-			function command_not_found_handler() {
-					if /opt/homebrew/bin/mise hook-not-found -s zsh "$1"; then
-						_mise_hook
-						"$@"
-					elif [ -n "$(declare -f _command_not_found_handler)" ]; then
-							_command_not_found_handler "$@"
-					else
-							echo "zsh: command not found: $1" >&2
-							return 127
-					fi
-			}
+		function command_not_found_handler() {
+			if /opt/homebrew/bin/mise hook-not-found -s zsh -- "$1"; then
+			_mise_hook
+			"$@"
+			elif [ -n "$(declare -f _command_not_found_handler)" ]; then
+				_command_not_found_handler "$@"
+			else
+				echo "zsh: command not found: $1" >&2
+				return 127
+			fi
+		}
 	fi
-
-	_mise_hook
 }
