@@ -29,11 +29,9 @@ type git >/dev/null 2>&1 || {
 	brew install git
 }
 
-type zinit >/dev/null 2>&1 || {
-	echo "📦  Installing zinit..."
-	ZINIT_HOME="${XDG_DATA_HOME}/zinit/zinit.git"
-	mkdir -p "$(dirname $ZINIT_HOME)"
-	git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+type sheldon >/dev/null 2>&1 || {
+	echo "📦  Installing sheldon..."
+	brew install sheldon
 }
 
 type mise >/dev/null 2>&1 || {

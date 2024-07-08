@@ -3,20 +3,11 @@
 # Path
 path+=($HOME/.local/bin)
 
+# Load and initialise completion system
+autoload -Uz compinit && compinit
+
 # Plugins
-source "$XDG_DATA_HOME/zinit/zinit.git/zinit.zsh"
-
-zinit wait lucid light-mode for \
-	OMZ::lib/git.zsh \
-	OMZP::git \
-	iridakos/goto \
-	zsh-users/zsh-completions \
-	atload="_zsh_autosuggest_start" zsh-users/zsh-autosuggestions \
-	atinit="zicompinit; zicdreplay" zdharma-continuum/fast-syntax-highlighting
-
-zinit light-mode for \
-	multisrc="*" "$ZDOTDIR/plugins" \
-	pick="async.zsh" src="pure.zsh" sindresorhus/pure
+eval "$(sheldon source)"
 
 # History
 HISTFILE="$XDG_STATE_HOME/zsh/history"
@@ -26,9 +17,6 @@ setopt HIST_IGNORE_DUPS
 setopt HIST_FIND_NO_DUPS
 setopt INC_APPEND_HISTORY
 setopt HIST_IGNORE_SPACE
-
-# Make all PATH entires unique
-typeset -aU path
 
 # Completions
 fpath+=($HOMEBREW_PREFIX/share/zsh/site-functions)
@@ -55,3 +43,6 @@ setopt NO_LIST_BEEP  # Prevent beeps when showing list
 
 # Ensure emcas mode
 set -o emacs
+
+# Make all PATH entires unique
+typeset -aU path
