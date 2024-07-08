@@ -2,8 +2,8 @@
 opacity = 0.7
 blur = true
 startup_mode = "Maximized"
-# padding = { x = 10, y = 10 }
-# decorations = "buttonless"
+padding = { x = 10, y = 10 }
+decorations = "buttonless"
 
 [font.normal]
 family = "SF Mono"

@@ -3,6 +3,7 @@ vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 vim.opt.number = true
 vim.opt.relativenumber = true
+vim.api.nvim_set_option("clipboard","unnamed")
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
