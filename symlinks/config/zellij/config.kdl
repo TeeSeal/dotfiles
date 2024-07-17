@@ -1,0 +1,11 @@
+theme "catppuccin-mocha"
+
+keybinds {
+	shared_except "locked" {
+		bind "Alt W" { CloseTab; }
+		bind "Alt w" { CloseFocus; }
+		bind "Alt t" { NewTab; }
+		bind "Alt D" { NewPane "Down"; }
+		bind "Alt d" { NewPane "Right"; }
+	}
+}

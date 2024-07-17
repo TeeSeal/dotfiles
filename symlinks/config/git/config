@@ -36,12 +36,15 @@
 		git delete-remote-merged-branches; \
 		git delete-merged-branches; \
 	}; f"
+	l = "log --oneline"
+	psup = "push --set-upstream"
+	sw = "switch"
+	cb = "checkout -b"
+	bd = "branch -D"
 [pull]
 	rebase = false
 [sequence]
 	editor = code --wait
-[init]
-	defaultBranch = main
 [include]
 	path = config.local
 [push]
