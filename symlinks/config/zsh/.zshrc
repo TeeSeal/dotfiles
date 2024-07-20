@@ -8,6 +8,7 @@ autoload -Uz compinit && compinit
 
 # Plugins
 eval "$(sheldon source)"
+source <(fzf --zsh)
 
 # History
 HISTFILE="$XDG_STATE_HOME/zsh/history"
