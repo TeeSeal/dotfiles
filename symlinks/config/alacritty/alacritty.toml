@@ -7,8 +7,8 @@ decorations = "buttonless"
 option_as_alt = "OnlyLeft"
 
 [font.normal]
-family = "SF Mono"
-style = "Semibold"
+family = "Liga SFMono Nerd Font" # https://github.com/shaunsingh/SFMono-Nerd-Font-Ligaturized
+style = "SemiBold"
 
 # Cattpuccin Mocha theme
 [colors.primary]
