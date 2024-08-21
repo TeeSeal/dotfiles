@@ -1,6 +1,7 @@
 .vscode
 .ruby-version
 __pycache__
+.mise.toml
 
 # Compiled source #
 ###################
