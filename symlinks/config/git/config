@@ -18,24 +18,11 @@
 	undof = "!f() { git reset --hard \"HEAD~$1\"; }; f"
 	rb = "!f() { git rebase $1; }; f"
 	rbi = "!f() { git rebase --interactive --autosquash $1; }; f"
-	delete-merged-branches = "!f() { \
-		local default_branch=$(git config init.defaultBranch || echo "master"); \
-		local branches_to_delete=$(git branch --no-color --merged $default_branch | grep -vE $default_branch);\
-		echo $branches_to_delete | xargs -n 1 git branch -d; \
-	}; f"
+	delete-merged-branches = "!f() { local default_branch=$(git config init.defaultBranch || echo \"master\"); git branch --no-color --merged $default_branch | grep -vE $default_branch | xargs -r git branch -d }; f"
 	bda = delete-merged-branches
-	delete-remote-merged-branches = "!f() { \
-		local default_branch=$(git config init.defaultBranch || echo "master"); \
-		local branches_to_delete=$(git branch --no-color --merged $default_branch | grep -vE $default_branch); \
-		echo $branches_to_delete | xargs -n 1 git push --delete origin; \
-	}; f"
+	delete-remote-merged-branches = "!f() { local default_branch=$(git config init.defaultBranch || echo \"master\"); git branch --no-color --merged $default_branch | grep -vE $default_branch | xargs -r git push --delete origin; }; f"
 	bdar = delete-remote-merged-branches
-	cleanup = "!f() { \
-		local default_branch=$(git config init.defaultBranch || echo "master"); \
-		git checkout $default_branch && git pull upstream $default_branch && git push; \
-		git delete-remote-merged-branches; \
-		git delete-merged-branches; \
-	}; f"
+	cleanup = "!f() { local default_branch=$(git config init.defaultBranch || echo \"master\"); git checkout $default_branch && git pull upstream $default_branch && git push; git delete-remote-merged-branches; git delete-merged-branches;}; f"
 	l = "log --oneline"
 	psup = "push --set-upstream"
 	sw = "switch"

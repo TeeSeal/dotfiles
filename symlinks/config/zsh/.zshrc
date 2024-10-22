@@ -3,12 +3,14 @@
 # Path
 path+=($HOME/.local/bin)
 
-# Load and initialise completion system
-autoload -Uz compinit && compinit
-
 # Plugins
 eval "$(sheldon source)"
 source <(fzf --zsh)
+
+# Load and initialise completion system
+autoload -Uz compinit && compinit
+# Remove git completions from brew in favor of the zsh ones
+rm -f "$HOMEBREW_PREFIX/share/zsh/site-functions/_git"
 
 # History
 HISTFILE="$XDG_STATE_HOME/zsh/history"
@@ -18,9 +20,6 @@ setopt HIST_IGNORE_DUPS
 setopt HIST_FIND_NO_DUPS
 setopt INC_APPEND_HISTORY
 setopt HIST_IGNORE_SPACE
-
-# Completions
-fpath+=($HOMEBREW_PREFIX/share/zsh/site-functions)
 
 zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
