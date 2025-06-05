@@ -36,3 +36,5 @@
 	path = config.local
 [push]
 	autoSetupRemote = true
+[init]
+	defaultBranch = main

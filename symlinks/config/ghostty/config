@@ -1,0 +1,18 @@
+theme = catppuccin-mocha
+background-opacity = 0.8
+background-blur = true
+
+font-family = "SF Mono"
+font-style = "Semibold"
+font-size = 12
+font-thicken = true
+font-thicken-strength = 120
+
+shell-integration-features = no-cursor
+cursor-style = block
+
+keybind = global:cmd+f1=toggle_quick_terminal
+quick-terminal-animation-duration = 0.1
+
+macos-titlebar-style = tabs
+split-divider-color = #45475a
