@@ -4,5 +4,5 @@ return {
 	config = true,
 	keys = {
 		{ "<leader>u", function() require('undotree').toggle() end },
-  	},
+	},
 }
