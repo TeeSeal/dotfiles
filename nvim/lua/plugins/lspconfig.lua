@@ -1,6 +1,6 @@
 return {
-	'neovim/nvim-lspconfig',
+	"neovim/nvim-lspconfig",
 	config = function()
-		vim.lsp.enable('pyright')
-	end
+		vim.lsp.enable("pyright")
+	end,
 }
