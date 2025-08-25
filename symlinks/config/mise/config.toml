@@ -1,6 +1,7 @@
 [tools]
-bun = "1.2"
-node = "22.14"
+elixir = "1.18"
+erlang = "28.0"
+node = "24.5"
 python = "3.13"
 rust = "1.85"
 uv = "latest"
