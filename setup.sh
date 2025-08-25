@@ -1,32 +1,8 @@
 #!/usr/bin/env sh
 
-export DOTFILES=$(cd "$(dirname "$0")"; pwd)
-
-yn() {
-	while true; do
-		read response
-		case $response in
-				[Yy]* ) return 0;;
-				[Nn]* ) return 1;;
-				* ) echo "Please answer with 'y' or 'n'.";;
-		esac
-	done
-}
-
 type brew >/dev/null 2>&1 || {
 	echo "🍺  Installing Homebrew..."
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-}
-
-type zsh >/dev/null 2>&1 || {
-	echo "💻  Installing zsh..."
-	brew install zsh
-	chsh -s $(which zsh)
-}
-
-type git >/dev/null 2>&1 || {
-	echo "🔀  Installing git..."
-	brew install git
 }
 
 type sheldon >/dev/null 2>&1 || {
@@ -44,9 +20,34 @@ type fzf >/dev/null 2>&1 || {
 	brew install fzf
 }
 
-source "$DOTFILES/script/iterm2.sh"
-source "$DOTFILES/script/nvim.sh"
-source "$DOTFILES/script/vscode.sh"
-source "$DOTFILES/script/symlinks.sh"
+link_file() {
+	if [ -e "$2" ]; then
+		if [ "$1" -ef "$2" ]; then
+			echo "OK:  $1 already linked"
+			return 0
+		else
+			mv "$2" "$2.bak"
+			echo "WARN:  moved $2 to $2.bak"
+		fi
+	fi
+
+	ln -sf "$1" "$2"
+	echo "OK:  linked $1 to $2"
+}
+
+DOTFILES=$(cd "$(dirname "$0")"; pwd)
+HOME_SRC="$DOTFILES/home"
+CONFIGS_SRC="$DOTFILES/config"
+
+for SRC in $(find $HOME_SRC -depth 1); do
+	FILE_PATH="$HOME/$(basename $SRC)"
+	link_file $SRC $FILE_PATH
+done
+
+for SRC in $(find $CONFIGS_SRC -depth 2); do
+	FILE_PATH="${XDG_CONFIG_HOME:-$HOME/.config}${SRC#$CONFIGS_SRC}"
+	mkdir -p $(dirname $FILE_PATH)
+	link_file $SRC $FILE_PATH
+done
 
 echo; echo "✨  Done"
