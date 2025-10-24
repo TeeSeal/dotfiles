@@ -22,9 +22,5 @@ apply = ["defer"]
 github = "zdharma-continuum/fast-syntax-highlighting"
 apply = ["defer"]
 
-[plugins.pure]
-github = "sindresorhus/pure"
-use = ["async.zsh", "pure.zsh"]
-
 [plugins.local-plugins]
 local = "~/.config/zsh/plugins"

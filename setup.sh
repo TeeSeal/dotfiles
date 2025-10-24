@@ -20,6 +20,11 @@ type fzf >/dev/null 2>&1 || {
 	brew install fzf
 }
 
+type starship >/dev/null 2>&1 || {
+	echo "🚀  Installing starship..."
+	brew install mise
+}
+
 link_file() {
 	if [ -e "$2" ]; then
 		if [ "$1" -ef "$2" ]; then
@@ -45,6 +50,12 @@ for SRC in $(find $HOME_SRC -depth 1); do
 done
 
 for SRC in $(find $CONFIGS_SRC -depth 2); do
+	FILE_PATH="${XDG_CONFIG_HOME:-$HOME/.config}${SRC#$CONFIGS_SRC}"
+	mkdir -p $(dirname $FILE_PATH)
+	link_file $SRC $FILE_PATH
+done
+
+for SRC in $(find $CONFIGS_SRC -depth 1 -type f); do
 	FILE_PATH="${XDG_CONFIG_HOME:-$HOME/.config}${SRC#$CONFIGS_SRC}"
 	mkdir -p $(dirname $FILE_PATH)
 	link_file $SRC $FILE_PATH
