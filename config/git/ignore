@@ -3,6 +3,9 @@
 .ruby-version
 __pycache__
 .mise.toml
+.mise.*.toml
+mise.toml
+mise.*.toml
 
 # Compiled source #
 ###################

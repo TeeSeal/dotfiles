@@ -1,1 +1,4 @@
-*.nosync*
+*.nosync
+*.nosync.*
+*.local
+*.local.*
