@@ -6,7 +6,6 @@ export XDG_STATE_HOME="$HOME/.local/state"
 export LESSHISTFILE="$XDG_STATE_HOME/lesshst"
 
 export CLICOLOR=1
-export LSCOLORS="Gxfxcxdxbxegedabagacad"
 
 export LANG="en_GB.UTF-8"
 export LC_ALL="en_US.UTF-8"
