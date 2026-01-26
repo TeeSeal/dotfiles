@@ -1,0 +1,14 @@
+{
+  "modules-center": ["ext/workspaces"],
+  "ext/workspaces": {
+    "format": "{icon}",
+    // "format-icons": {
+    //   "active": "",
+    //   "default": "",
+    // },
+    // "ignore-hidden": false,
+    "on-click": "activate",
+    "on-click-right": "deactivate",
+    "sort-by-id": true,
+  },
+}
