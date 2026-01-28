@@ -7,7 +7,7 @@ export LESSHISTFILE="$XDG_STATE_HOME/lesshst"
 
 export CLICOLOR=1
 
-export LANG="en_GB.UTF-8"
+export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 
 export EDITOR="nvim"
@@ -16,4 +16,4 @@ export VISUAL="zed --wait"
 export SHELL_SESSION_DIR="$XDG_STATE_HOME/zsh/sessions"
 export SHELL_SESSION_FILE="$SHELL_SESSION_DIR/$TERM_SESSION_ID"
 
-export GPG_TTY=$(tty)
+# export GPG_TTY=$(tty)

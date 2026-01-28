@@ -1,0 +1,16 @@
+{
+  "modules-left": ["ext/workspaces"],
+  "modules-center": ["clock"],
+
+  "ext/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "sort-by-id": true,
+  },
+
+  "clock": {
+    "tooltip": false,
+    "format": "{:%H:%M   %a, %b %d}",
+    "interval": 1,
+  },
+}
