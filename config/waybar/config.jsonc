@@ -1,6 +1,9 @@
 {
-  "modules-left": ["ext/workspaces"],
+  "height": 46,
+
+  "modules-left": ["ext/workspaces", "dwl/window"],
   "modules-center": ["clock"],
+  "modules-right": ["tray"],
 
   "ext/workspaces": {
     "format": "{icon}",
@@ -12,5 +15,15 @@
     "tooltip": false,
     "format": "{:%H:%M   %a, %b %d}",
     "interval": 1,
+  },
+
+  "tray": {
+    "icon-size": 18,
+    "spacing": 5,
+    "reverse-direction": true,
+  },
+
+  "dwl/window": {
+    "format": "{layout}",
   },
 }
