@@ -20,8 +20,16 @@
     "use_system_clipboard": "on_yank",
   },
   "base_keymap": "VSCode",
-  "theme": "Catppuccin Mocha",
-  "icon_theme": "Catppuccin Mocha",
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Mocha",
+  },
+  "icon_theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Mocha",
+  },
   "ui_font_size": 18,
   "buffer_font_size": 16,
   "show_whitespaces": "all",
