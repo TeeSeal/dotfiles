@@ -29,10 +29,8 @@
   },
 
   "ui_font_family": "SF Mono",
-  "ui_font_size": 18,
   "ui_font_weight": 500,
   "buffer_font_family": "SF Mono",
-  "buffer_font_size": 14,
   "buffer_font_weight": 500,
   "show_whitespaces": "all",
   "colorize_brackets": true,
