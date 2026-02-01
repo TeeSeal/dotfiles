@@ -16,5 +16,6 @@ export EDITOR="nvim"
 export VISUAL="zed --wait"
 
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
-
+export CUDA_CACHE_PATH="$XDG_CACHE_HOME/nv"
+export GNUPGHOME="$XDG_DATA_HOME/ghupg"
 # export GPG_TTY=$(tty)
