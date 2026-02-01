@@ -7,19 +7,11 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "hard_tabs": false,
-  "git_panel": {
-    "tree_view": false,
-  },
-  "colorize_brackets": true,
-  "title_bar": {
-    "show_branch_icon": true,
-  },
-  "vim_mode": false,
-  "vim": {
-    "use_system_clipboard": "on_yank",
-  },
   "base_keymap": "VSCode",
+  "session": {
+    "trust_all_worktrees": true,
+  },
+
   "theme": {
     "mode": "system",
     "light": "Catppuccin Latte",
@@ -30,15 +22,22 @@
     "light": "Catppuccin Latte",
     "dark": "Catppuccin Mocha",
   },
-  "ui_font_size": 18,
-  "buffer_font_size": 16,
-  "show_whitespaces": "all",
+
+  "vim_mode": false,
+  "vim": {
+    "use_system_clipboard": "on_yank",
+  },
+
   "ui_font_family": "SF Mono",
+  "ui_font_size": 18,
   "ui_font_weight": 500,
   "buffer_font_family": "SF Mono",
+  "buffer_font_size": 14,
   "buffer_font_weight": 500,
+  "show_whitespaces": "all",
+  "colorize_brackets": true,
   "scroll_beyond_last_line": "off",
-  "use_system_window_tabs": true,
+
   "terminal": {
     "font_family": "SF Mono",
     "font_weight": 500,
@@ -47,21 +46,20 @@
       "breadcrumbs": false,
     },
   },
-  "features": {
-    "edit_prediction_provider": "copilot",
-  },
-  "edit_predictions": {
-    "mode": "subtle",
-  },
-  "telemetry": {
-    "diagnostics": false,
-    "metrics": false,
+
+  "use_system_window_tabs": true,
+  "title_bar": {
+    "show_branch_icon": true,
   },
   "tabs": {
     "close_position": "left",
     "file_icons": true,
     "show_diagnostics": "all",
     "git_status": true,
+  },
+
+  "git_panel": {
+    "tree_view": false,
   },
   "project_panel": {
     "default_width": 360,
@@ -73,40 +71,9 @@
   "collaboration_panel": {
     "button": false,
   },
-  "agent": {
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "grok-code-fast-1",
-    },
-    "enabled": true,
-    "button": true,
-  },
-  "file_types": {
-    "HTML": ["*.html"],
-  },
-  "languages": {
-    "Python": {
-      "language_servers": ["pyright", "ruff"],
-      "formatter": [
-        { "code_action": "source.organizeImports.ruff" },
-        { "code_action": "source.fixAll.ruff" },
-        {
-          "language_server": {
-            "name": "ruff",
-          },
-        },
-      ],
-    },
-    "YAML": {
-      "language_servers": [],
-      "format_on_save": "off",
-    },
-    "TypeScript": {
-      "tab_size": 4,
-      "hard_tabs": true,
-    },
-    "HTML": {
-      "language_servers": ["eslint", "..."],
-    },
+
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
   },
 }
