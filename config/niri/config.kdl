@@ -157,6 +157,12 @@ window-rule {
     default-floating-position x=20 y=25 relative-to="bottom-right"
 }
 
+window-rule {
+    match app-id="steam"
+    exclude title="^Steam$"
+    open-floating true
+}
+
 // Open shell windows as floating by default
 window-rule {
     match app-id=r#"org.quickshell$"#
