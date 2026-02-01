@@ -7,4 +7,7 @@ done
 unsetopt allexport
 unset FILE
 
+export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
+
 export ZDOTDIR="${XDG_CONFIG_HOME:-$HOME/.config}/zsh"
