@@ -51,13 +51,7 @@ prompt_yes_no() {
 }
 
 DOTFILES=$(cd "$(dirname "$0")"; pwd)
-HOME_SRC="$DOTFILES/home"
 CONFIGS_SRC="$DOTFILES/config"
-
-for SRC in $(find $HOME_SRC -maxdepth 1 -mindepth 1); do
-	FILE_PATH="$HOME/$(basename $SRC)"
-	install_file $SRC $FILE_PATH
-done
 
 for SRC in $(find $CONFIGS_SRC -maxdepth 2 -mindepth 2); do
 	FILE_PATH="${XDG_CONFIG_HOME:-$HOME/.config}${SRC#$CONFIGS_SRC}"

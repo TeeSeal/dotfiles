@@ -13,7 +13,7 @@ input {
 layout {
     // Leaving the brakcets empty lets the windows themselves decide their initial width.
     default-column-width {}
-    center-focused-column "on-overflow"
+    // center-focused-column "on-overflow"
 }
 
 binds {
