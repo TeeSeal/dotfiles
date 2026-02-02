@@ -41,15 +41,6 @@ install_file() {
 	return 0
 }
 
-prompt_yes_no() {
-	printf "%s [Y/n]: " "$1"
-	read answer
-	case $answer in
-		[Nn]* ) return 1;;
-		* ) return 0;
-	esac
-}
-
 DOTFILES=$(cd "$(dirname "$0")"; pwd)
 CONFIGS_SRC="$DOTFILES/config"
 
