@@ -1,16 +1,18 @@
-# This is Git's per-user configuration file.
+[core]
+	editor = nvim
+[init]
+	defaultBranch = main
 [user]
 	name = Alex Hincu
 	email = alex@teeseal.dev
 	signingKey = 1179468EE5D69764
-[http]
-	postBuffer = 524288000
-[core]
-	editor = nvim
-[diff]
-	tool = vimdiff
-[difftool]
-	prompt = false
+[fetch]
+	prune = true
+	pruneTags = true
+[pull]
+	rebase = false
+[push]
+	autoSetupRemote = true
 [alias]
 	d = difftool
 	squash = "!f() { git reset --soft \"HEAD~$1\"; git commit -m \"$2\"; }; f"
@@ -28,11 +30,5 @@
 	sw = "switch"
 	cb = "checkout -b"
 	bd = "branch -D"
-[pull]
-	rebase = false
 [include]
 	path = config.local
-[push]
-	autoSetupRemote = true
-[init]
-	defaultBranch = main
