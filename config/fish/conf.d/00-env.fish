@@ -16,3 +16,5 @@ set --global --export EDITOR "nvim"
 set --global --export VISUAL "zed --wait"
 
 set --global --export LESSHISTFILE "$XDG_STATE_HOME/lesshst"
+
+set --global --export MISE_FISH_AUTO_ACTIVATE "0"
