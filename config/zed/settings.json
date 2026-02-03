@@ -23,7 +23,7 @@
     "dark": "Catppuccin Mocha",
   },
 
-  "vim_mode": true,
+  "vim_mode": false,
   "vim": {
     "use_system_clipboard": "on_yank",
   },
