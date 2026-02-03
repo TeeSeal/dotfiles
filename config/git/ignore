@@ -1,42 +1,10 @@
+# Local configs
 .vscode
 .zed
-.ruby-version
-__pycache__
-.mise.toml
-.mise.*.toml
-mise.toml
-mise.*.toml
+mise.local.toml
+.mise.local.toml
 
-# Compiled source #
-###################
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
-.elixir_ls/
-
-# Packages #
-############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
-
-# Logs and databases #
-######################
-*.log
-*.sqlite
-
-# OS generated files #
-######################
+# OS generated files
 .DS_Store
 .DS_Store?
 ._*
