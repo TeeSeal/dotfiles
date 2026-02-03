@@ -20,7 +20,7 @@ install_file() {
 				fi
 			fi
 
-			mkdir -p $(dirname $FILE_PATH)
+			mkdir -p $(dirname $2)
 			ln -sf "$1" "$2"
 			echo "	OK: linked $1 to $2";;
 		"c" | "copy")
@@ -34,6 +34,7 @@ install_file() {
 				fi
 			fi
 
+			mkdir -p $(dirname $2)
 			cp -f "$1" "$2"
 			echo "	OK: copied $1 to $2";;
 	esac
