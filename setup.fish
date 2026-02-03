@@ -19,8 +19,8 @@ function install_file --argument-names source destination
             end
         end
 
-        mkdir --parents $(dirname $destination)
-        ln --symbolic --force $source $destination
+        mkdir -p $(dirname $destination)
+        ln -sf $source $destination
         echo "	OK: linked $source to $destination."
     case "c" "copy"
         if test -e $destination
@@ -32,8 +32,8 @@ function install_file --argument-names source destination
             end
         end
 
-        mkdir --parents $(dirname $destination)
-        cp --force $source $destination
+        mkdir -p $(dirname $destination)
+        cp -f $source $destination
         echo "	OK: copied $source to $destination."
     case *
         return 1
