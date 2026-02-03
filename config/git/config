@@ -30,8 +30,6 @@
 	bd = "branch -D"
 [pull]
 	rebase = false
-[sequence]
-	editor = code --wait
 [include]
 	path = config.local
 [push]
