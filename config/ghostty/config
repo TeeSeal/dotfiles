@@ -11,8 +11,6 @@ font-size = 12
 font-thicken = true
 font-thicken-strength = 120
 
-shell-integration-features = no-cursor
-cursor-style = block
 adjust-cursor-thickness = 2
 
 keybind = global:cmd+f1=toggle_quick_terminal
