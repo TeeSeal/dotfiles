@@ -39,6 +39,8 @@
   "terminal": {
     "font_family": "SF Mono",
     "font_weight": 500,
+    "blinking": "on",
+    "cursor_shape": "bar",
     "detect_venv": "off",
     "toolbar": {
       "breadcrumbs": false,
