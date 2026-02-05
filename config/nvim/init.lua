@@ -24,3 +24,12 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins", { ui = { border = "rounded" } })
+
+
+-- Reset cursor shape on exit
+vim.api.nvim_create_autocmd("VimLeave", {
+    callback = function()
+        vim.opt.guicursor = ""
+        vim.fn.chansend(vim.v.stderr, "\x1b[ q")
+    end,
+})

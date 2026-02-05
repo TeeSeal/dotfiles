@@ -29,16 +29,16 @@
   },
 
   "ui_font_family": "SF Mono",
-  "ui_font_weight": 500,
+  "ui_font_weight": 600,
   "buffer_font_family": "SF Mono",
-  "buffer_font_weight": 500,
+  "buffer_font_weight": 600,
   "show_whitespaces": "all",
   "colorize_brackets": true,
   "scroll_beyond_last_line": "off",
 
   "terminal": {
     "font_family": "SF Mono",
-    "font_weight": 500,
+    "font_weight": 600,
     "blinking": "on",
     "cursor_shape": "bar",
     "detect_venv": "off",
