@@ -8,7 +8,6 @@
 	signingKey = 1179468EE5D69764
 [fetch]
 	prune = true
-	pruneTags = true
 [pull]
 	rebase = false
 [push]
