@@ -47,6 +47,10 @@
     },
   },
 
+  "git": {
+    "hunk_style": "unstaged_hollow",
+  },
+
   "use_system_window_tabs": true,
   "title_bar": {
     "show_branch_icon": true,
