@@ -46,7 +46,17 @@ DOTFILES=$(cd "$(dirname "$0")"; pwd)
 CONFIGS_SRC="$DOTFILES/config"
 
 for SRC in $(find $CONFIGS_SRC -maxdepth 2 -mindepth 2); do
-	FILE_PATH="${XDG_CONFIG_HOME:-$HOME/.config}${SRC#$CONFIGS_SRC}"
+	if [ "${SRC#*.linux}" != $SRC ] || [ "${SRC#*.linux.}" != $SRC ] && [ $(uname) != "Linux" ]; then
+		echo "SKIP NOT LINUX"
+		continue
+	fi
+
+	if [ "${SRC#*.macos}" != $SRC ] || [ "${SRC#*.macos.}" != $SRC ] && [ $(uname) != "Darwin" ]; then
+		echo "SKIP NOT MACOS"
+		continue
+	fi
+
+	FILE_PATH=$(echo "${XDG_CONFIG_HOME:-$HOME/.config}${SRC#$CONFIGS_SRC}" | sed -E 's/\.(linux|macos)(\.|$)/\2/')
 	install_file $SRC $FILE_PATH
 done
 

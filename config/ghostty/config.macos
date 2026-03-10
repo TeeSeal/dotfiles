@@ -11,9 +11,8 @@ font-thicken = true
 font-thicken-strength = 120
 
 adjust-cursor-thickness = 2
+split-divider-color = #45475a
 
 keybind = global:cmd+f1=toggle_quick_terminal
 quick-terminal-animation-duration = 0.1
-
 macos-titlebar-style = tabs
-split-divider-color = #45475a
