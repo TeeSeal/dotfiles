@@ -1,0 +1,13 @@
+theme = "Catppuccin Mocha"
+
+window-padding-x = 10
+background-opacity = 0.9
+
+font-family = "SF Mono"
+font-style = "Semibold"
+font-size = 12
+
+adjust-cursor-thickness = 1
+split-divider-color = #45475a
+
+quit-after-last-window-closed = false

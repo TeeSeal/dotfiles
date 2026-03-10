@@ -46,7 +46,15 @@ set --local dotfiles_dir (cd (dirname (status --current-filename)); pwd)
 set --query XDG_CONFIG_HOME; or set --local XDG_CONFIG_HOME "$HOME/.config"
 
 for source in (find $dotfiles_dir/config -maxdepth 1 -mindepth 1 -type f) $dotfiles_dir/config/*/*
-    set --local destination (string replace "$dotfiles_dir/config" $XDG_CONFIG_HOME $source)
+    if string match -qr '\.linux(\.|$)' $source; and test (uname) != "Linux"
+        continue
+    end
+
+    if string match -qr '\.macos(\.|$)' $source; and test (uname) != "Darwin"
+        continue
+    end
+
+    set --local destination (echo $source | string replace "$dotfiles_dir/config" $XDG_CONFIG_HOME | string replace -r '\.(linux|macos)(?=\.|$)' "")
     install_file $source $destination
 end
 

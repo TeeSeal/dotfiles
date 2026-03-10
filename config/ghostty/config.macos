@@ -1,7 +1,6 @@
 theme = "Catppuccin Mocha"
 
 window-padding-x = 10
-
 background-opacity = 0.8
 background-blur = true
 

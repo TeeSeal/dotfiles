@@ -19,8 +19,8 @@ layout {
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
-    Mod+Return repeat=false { spawn "footclient"; }
-    Mod+Shift+Return repeat=false { spawn "foot"; }
+    Mod+Return repeat=false { spawn "ghostty" "+new-window"; }
+    Mod+Shift+Return repeat=false { spawn "ghostty" "--gtk-single-instance=false"; }
 
     Mod+O repeat=false { toggle-overview; }
     Mod+Q repeat=false { close-window; }
